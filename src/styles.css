@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header-sec {
+    background-color: red;
+    text-align: center;
+}
+
+#heading {
+    color: #f4efef;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-bar {
+    background-color: #e6e3e3;
+    height: 91.8vh;
+    width: 20vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-section {
+    height: 20vh;
+}
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;}
+
+#project-container > h3 {
+    font-size: 26px;
+}
+
+#project-list {
+    display: inline-block;
+}
+
+#add-project-btn {
+    height: 5vh;
+    width: 15vw;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+}
+
+#tasks-container {
+    background-color: #f4efef;
+    width: 100vw;
+    height: 91.8vh;
+}

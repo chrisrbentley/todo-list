@@ -1,3 +1,5 @@
+import addHours from "date-fns/addHours";
+
 class Todo {
     constructor(title, description, dueDate, priority, notes, status) {
         this.title = title;
@@ -8,7 +10,7 @@ class Todo {
         this.status = status;
     }
 }
-
-let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', '8/31/2022', 'high', '', 'Not Done');
+let date = new Date();
+let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', addHours(date, 6) , 'high', 'Read modules lesson', 'Not Done');
 
 export { defaultTodo };

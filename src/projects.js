@@ -9,8 +9,8 @@ class Project {
     }
 }
 
-let todoList = new Project('Todo List', []);
-projectsList.push(todoList);
+let reminders = new Project('Reminders', []);
+projectsList.push(reminders);
 
-todoList.todos.push(defaultTodo);
+reminders.todos.push(defaultTodo);
 console.log(projectsList);   

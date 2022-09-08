@@ -53,6 +53,12 @@ main {
     border-radius: 15px;
     border: none;
     font-size: 18px;
+    background-color: #e6e3e3;
+}
+
+#add-project-btn:hover {
+    cursor: pointer;
+    background-color: #f4efef;
 }
 
 #tasks-container {

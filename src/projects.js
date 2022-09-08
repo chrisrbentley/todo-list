@@ -1,22 +1,16 @@
-import { todo } from "./Todo";
+import { defaultTodo } from './todo.js'
 
-const projects = () => {
-    let projectsArr = [];
+let projectsList = [];
 
-    class Project {
-        constructor(title, todos) {
-            this.project = title;
-            this.todos = todos;
-        }
+class Project {
+    constructor(title, todos) {
+        this.project = title;
+        this.todos = todos;
     }
-
-    let todoList = new Project('Todo List', []);
-    projectsArr.push(todoList);
-    console.log(projectsArr);
-
-
-
 }
 
+let todoList = new Project('Todo List', []);
+projectsList.push(todoList);
 
-export { projects }
+todoList.todos.push(defaultTodo);
+console.log(projectsList);   

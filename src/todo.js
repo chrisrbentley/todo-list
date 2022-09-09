@@ -1,4 +1,5 @@
-import addHours from "date-fns/addHours";
+import { addDays, format } from "date-fns";
+import parseISO from "date-fns/parseISO";
 
 class Todo {
     constructor(title, description, dueDate, priority, notes, status) {
@@ -11,6 +12,10 @@ class Todo {
     }
 }
 let date = new Date();
-let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', addHours(date, 6) , 'high', 'Read modules lesson', 'Not Done');
+let formattedDate = format(date, "Pp")
+let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', 'Read modules lesson', false);
 
-export { defaultTodo };
+console.log(formattedDate);
+
+
+export { defaultTodo, formattedDate };

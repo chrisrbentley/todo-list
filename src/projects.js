@@ -1,4 +1,4 @@
-import { defaultTodo } from './todo.js'
+import { defaultTodo } from './todo.js';
 
 let projectsList = [];
 
@@ -14,3 +14,5 @@ projectsList.push(reminders);
 
 reminders.todos.push(defaultTodo);
 console.log(projectsList);   
+
+export { projectsList };

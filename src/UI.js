@@ -1,4 +1,4 @@
-import { projectsList, formattedDate } from "./projects";
+import { projectsList, formattedDate, addProject } from "./projects";
 
 const body = document.querySelector('#body');
 const headerTag = document.createElement('header');
@@ -20,6 +20,7 @@ const defDetails = document.createElement('div');
 const defDetailBtn = document.createElement('button');
 const defDate = document.createElement('div');
 
+main.id = 'main';
 headerTag.id = 'header-sec';
 heading.id = 'heading';
 navBar.id = 'nav-bar';
@@ -69,7 +70,7 @@ currentTask.textContent = 'All Tasks';
     const defaultProj = document.createElement('li');
     projList.appendChild(ul);
     ul.appendChild(defaultProj);
-    defaultProj.textContent = projectsList[0].project;
+    defaultProj.textContent = projectsList[0].title;
     defaultProj.className = 'project';
 
     defaultProj.addEventListener('click', () => {
@@ -77,5 +78,83 @@ currentTask.textContent = 'All Tasks';
         defDetailBtn.textContent = 'Details';
         defDate.textContent = projectsList[0].todos[0].dueDate;
     })
-    
 })();
+
+//create modal
+
+const modalCnt = document.createElement('div');
+modalCnt.id = 'modal-container';
+body.appendChild(modalCnt);
+
+const modalTop = document.createElement('div');
+modalTop.id = 'modal-top';
+modalCnt.appendChild(modalTop);
+
+const modalH3 = document.createElement('div');
+modalH3.classList.add('modal-h3');
+modalTop.appendChild(modalH3);
+modalH3.textContent = 'Create a new project'
+
+const exitBtn = document.createElement('button');
+exitBtn.classList.add('exit-button');
+exitBtn.textContent = 'X';
+modalTop.appendChild(exitBtn);
+
+const projFormCnt = document.createElement('div');
+projFormCnt.id = 'proj-form-container';
+modalCnt.appendChild(projFormCnt);
+
+
+(function loadModal() {
+    addProjBtn.addEventListener('click', () => {
+        modalCnt.style.display = 'flex';
+        modalCnt.style.flexDirection = 'column';
+        main.style.filter = 'blur(5px)';
+        headerTag.style.filter = 'blur(5px)';
+    })
+    exitBtn.addEventListener('click', () => {
+        modalCnt.style.display = 'none';
+        main.style.filter = 'none';
+        headerTag.style.filter = 'none';
+    }) 
+})();
+
+
+//create form
+
+const form = document.createElement('form');
+const fieldset = document.createElement('fieldset');
+const projectLable = document.createElement('label');
+const projectInput = document.createElement('input');
+const projFormBtn = document.createElement('button');
+
+
+form.classList.add('form');
+form.setAttribute("action", "/");
+form.setAttribute("method", "get");
+projFormBtn.classList.add("submit");
+
+
+projectLable.setAttribute("for", "title");
+projectInput.setAttribute("type", "text");
+projectInput.setAttribute("name", "title");
+projectInput.setAttribute("id", "title");
+projectInput.setAttribute("required", "");
+projFormBtn.setAttribute("type", "submit");
+
+
+
+projectLable.innerHTML = 'Title:'
+
+
+projFormCnt.appendChild(form);
+form.appendChild(fieldset);
+fieldset.appendChild(projectLable);
+fieldset.appendChild(projectInput);
+fieldset.appendChild(projFormBtn);
+ 
+projFormBtn.addEventListener('click', () => {
+    addProject()
+})
+
+export { projFormBtn, projectInput };

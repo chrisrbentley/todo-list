@@ -20,6 +20,7 @@ body {
 main {
     display: flex;
     flex-direction: row;
+    /* filter: blur(2px); */
 }
 
 #nav-bar {
@@ -170,4 +171,52 @@ main {
     align-items: center;
     position: relative;
     left: 100px;
+}
+
+#modal-container {
+    background-color: #e6e3e3;
+    display: none;
+    position: fixed;
+    height: 50vh;
+    width: 60vw;
+    top: 25vh;
+    left: 50vh;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+#modal-top {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    width: 60vw;
+    background-color: red;
+}
+
+.modal-h3 {
+    display: flex;
+    align-items: center;
+    color: #f4efef;
+    font-size: 2rem;
+}
+
+.exit-button {
+    height: 5vh;
+    width: 2vw;
+    color: #f4efef;
+    background-color: red;
+    border: none;
+    font-size: 2rem;
+    position: relative;
+    left: 650px;
+}
+
+.exit-button:hover {
+    cursor: pointer;
+}
+
+#proj-form-container {
+    height: 50vh;
+    width: 60vw;
+    background-color: orange;
 }

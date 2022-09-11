@@ -14,11 +14,6 @@ const addProjBtn = document.createElement('button');
 const tasksTop = document.createElement('div');
 const tasksBottom = document.createElement('div');
 const currentTask = document.createElement('h3');
-const defaultTask = document.createElement('div');
-const defName = document.createElement('div');
-const defDetails = document.createElement('div');
-const defDetailBtn = document.createElement('button');
-const defDate = document.createElement('div');
 
 main.id = 'main';
 headerTag.id = 'header-sec';
@@ -33,13 +28,7 @@ projList.id = 'project-list';
 tasksTop.id = 'tasks-top';
 tasksBottom.id = 'tasks-bottom';
 currentTask.id = 'current-task';
-defaultTask.id = 'default-task';
 
-defaultTask.className = 'task';
-defName.classList.add('task-item', 'task-name');
-defDetails.classList.add('task-item', 'task-details');
-defDate.classList.add('task-item', 'task-date');
-defDetailBtn.classList.add('detail-btn');
 
 body.appendChild(headerTag);
 headerTag.appendChild(heading);
@@ -54,48 +43,67 @@ projSec.appendChild(addProjBtn);
 projTasks.appendChild(tasksTop);
 projTasks.appendChild(tasksBottom);
 tasksTop.appendChild(currentTask);
-tasksBottom.appendChild(defaultTask);
-defaultTask.appendChild(defName);
-defaultTask.appendChild(defDetails);
-defaultTask.appendChild(defDate);
-defDetails.appendChild(defDetailBtn);
-
 heading.textContent = 'Todo List';
 projSecHead.textContent = 'Projects';
 addProjBtn.textContent = '+ Add Project';
 currentTask.textContent = 'All Tasks';
 
-/* (function displayDefault() {
-    const ul = document.createElement('ul');
-    const defaultProj = document.createElement('li');
-    projList.appendChild(ul);
-    ul.appendChild(defaultProj);
-    defaultProj.textContent = projectsList[0].title;
-    defaultProj.className = 'project';
-
-    defaultProj.addEventListener('click', () => {
-        defName.textContent = projectsList[0].todos[0].title;
-        defDetailBtn.textContent = 'Details';
-        defDate.textContent = projectsList[0].todos[0].dueDate;
-    })
-})(); */
 
 const ul = document.createElement('ul');
 projList.append(ul);
 
-(function renderProjects() {
+function renderProjects() {
     for (let i = 0; i < projectsList.length; i++) {
         const currentProj = document.createElement('li');
         currentProj.className = 'project';
         currentProj.textContent = projectsList[i].title;
         ul.appendChild(currentProj);
+
+        currentProj.addEventListener('click', () => {
+            if (projectsList[i].todos.length > 0) {
+                console.log('222');
+
+                tasksBottom.innerHTML = '';
+            
+                const task = document.createElement('div');
+                const taskName = document.createElement('div');
+                const taskDetails = document.createElement('div');
+                const detailsButton = document.createElement('button');
+                const taskDate = document.createElement('div');
+    
+                tasksBottom.appendChild(task);
+                task.appendChild(taskName);
+                task.appendChild(taskDetails);
+                taskDetails.appendChild(detailsButton);
+                task.appendChild(taskDate);
+    
+                task.className = 'task';
+                taskName.classList.add('task-item', 'task-name');
+                taskDetails.classList.add('task-item', 'task-details');
+                taskDate.classList.add('task-item', 'task-date');
+    
+                taskName.textContent = projectsList[i].todos[i].title;
+                detailsButton.textContent = 'Details';
+                taskDate.textContent = projectsList[i].todos[i].dueDate;
+
+
+            } else {
+                tasksBottom.innerHTML = '';
+                const emptyProjCnt = document.createElement('div');
+                const emptyProjP = document.createElement('p');
+                emptyProjP.textContent = 'This project is empty.'
+
+                emptyProjP.id = 'empty-project';
+
+                tasksBottom.appendChild(emptyProjCnt);
+                emptyProjCnt.appendChild(emptyProjP);
+                
+            }
+            
+        })
     }
-})();
-
-
-
-
-
+};
+renderProjects();
 
 //create modal
 
@@ -170,12 +178,14 @@ fieldset.appendChild(projectLable);
 fieldset.appendChild(projectInput);
 fieldset.appendChild(projFormBtn);
  
-projFormBtn.addEventListener('click', () => {
-    addProject()
+projFormBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    ul.innerHTML = '';
+    addProject();
 })
 
 //
 const addTasksBtn = document.createElement('button');
 
 
-export { projFormBtn, projectInput };
+export { projFormBtn, projectInput, renderProjects };

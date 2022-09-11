@@ -165,12 +165,17 @@ main {
     cursor: pointer;
 }
 
+
 .task-date {
     width: 9vw;
     justify-content: center;
     align-items: center;
     position: relative;
     left: 100px;
+}
+
+#empty-project {
+    font-size: 24px;
 }
 
 #modal-container {

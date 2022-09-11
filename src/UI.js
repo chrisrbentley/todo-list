@@ -65,7 +65,7 @@ projSecHead.textContent = 'Projects';
 addProjBtn.textContent = '+ Add Project';
 currentTask.textContent = 'All Tasks';
 
-(function displayDefault() {
+/* (function displayDefault() {
     const ul = document.createElement('ul');
     const defaultProj = document.createElement('li');
     projList.appendChild(ul);
@@ -78,7 +78,24 @@ currentTask.textContent = 'All Tasks';
         defDetailBtn.textContent = 'Details';
         defDate.textContent = projectsList[0].todos[0].dueDate;
     })
+})(); */
+
+const ul = document.createElement('ul');
+projList.append(ul);
+
+(function renderProjects() {
+    for (let i = 0; i < projectsList.length; i++) {
+        const currentProj = document.createElement('li');
+        currentProj.className = 'project';
+        currentProj.textContent = projectsList[i].title;
+        ul.appendChild(currentProj);
+    }
 })();
+
+
+
+
+
 
 //create modal
 
@@ -145,7 +162,7 @@ projFormBtn.setAttribute("type", "submit");
 
 
 projectLable.innerHTML = 'Title:'
-
+projFormBtn.innerHTML = 'Submit';
 
 projFormCnt.appendChild(form);
 form.appendChild(fieldset);
@@ -156,5 +173,9 @@ fieldset.appendChild(projFormBtn);
 projFormBtn.addEventListener('click', () => {
     addProject()
 })
+
+//
+const addTasksBtn = document.createElement('button');
+
 
 export { projFormBtn, projectInput };

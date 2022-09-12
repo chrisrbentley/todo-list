@@ -182,6 +182,10 @@ projFormBtn.addEventListener('click', function(event){
     event.preventDefault();
     ul.innerHTML = '';
     addProject();
+    modalCnt.style.display = 'none';
+    main.style.filter = 'none';
+    headerTag.style.filter = 'none';
+    projectInput.value = '';
 })
 
 //

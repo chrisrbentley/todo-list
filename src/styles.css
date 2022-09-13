@@ -153,13 +153,18 @@ main {
     left: 100px;
 }
 
-.task-details > button {
+.submit {
     height: 2rem;
     width: 5rem;
-    background-color: #e6e3e3;
-    border: 2px red solid;
+    background-color: red;
     border-radius: 5px;
     font-size: 18px;
+    border: none;
+    color: #f4efef;
+}
+
+.submit:hover {
+    cursor: pointer;
 }
 
 .task-details > button:hover {
@@ -279,4 +284,49 @@ main {
 
 .form > fieldset > button {
     margin: 10px;
+}
+
+#new-task-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    background-color: hotpink;
+    border-radius: 15px;
+}
+
+#new-task-btn:hover {
+    cursor: pointer;
+}
+
+#task-modal-container {
+    height: 25rem;
+    width: 40rem;
+    background-color: green;
+    background-color: #e6e3e3;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20rem;
+    left: 35.5rem;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+#modal-top-two {
+    height: 2.5rem;
+    width: 40rem;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+#task-form-container > form {
+    height: 22.2rem;
+}
+
+#task-form-container > form > fieldset{
+    height: 21.5rem;
+    border: none;
 }

@@ -1,4 +1,5 @@
 import { projectsList, formattedDate, addProject } from "./projects";
+import { addTask, newTodo } from "./todo";
 
 const body = document.querySelector('#body');
 const headerTag = document.createElement('header');
@@ -61,7 +62,6 @@ function renderProjects() {
 
         currentProj.addEventListener('click', () => {
             if (projectsList[i].todos.length > 0) {
-                console.log('222');
 
                 tasksBottom.innerHTML = '';
             
@@ -86,6 +86,25 @@ function renderProjects() {
                 detailsButton.textContent = 'Details';
                 taskDate.textContent = projectsList[i].todos[i].dueDate;
 
+                const newTask = document.createElement('btn');
+                tasksBottom.appendChild(newTask);
+                newTask.id = 'new-task-btn';
+                newTask.textContent = '+ New Task';
+
+                (function loadTaskModal() {
+                    newTask.addEventListener('click', () => {
+                        taskModalCnt.style.display = 'flex';
+                    })
+                })();
+
+                subTaskBtn.addEventListener('click', function(event){
+                    event.preventDefault();
+                    addTask();
+                    console.log(newTodo);
+                    projectsList[i].todos.push(newTodo);
+                    console.log(projectsList);
+                });
+
 
             } else {
                 tasksBottom.innerHTML = '';
@@ -97,6 +116,27 @@ function renderProjects() {
 
                 tasksBottom.appendChild(emptyProjCnt);
                 emptyProjCnt.appendChild(emptyProjP);
+
+                //
+
+                const newTask = document.createElement('btn');
+                tasksBottom.appendChild(newTask);
+                newTask.id = 'new-task-btn';
+                newTask.textContent = '+ New Task';
+
+                (function loadTaskModal() {
+                    newTask.addEventListener('click', () => {
+                        taskModalCnt.style.display = 'flex';
+                    })
+                })();
+
+                subTaskBtn.addEventListener('click', function(event){
+                    event.preventDefault();
+                    addTask();
+                    console.log(newTodo);
+                    projectsList[i].todos.push(newTodo);
+                    console.log(projectsList);
+                });
                 
             }
             
@@ -130,6 +170,101 @@ projFormCnt.id = 'proj-form-container';
 modalCnt.appendChild(projFormCnt);
 
 
+////
+
+const taskModalCnt = document.createElement('div');
+taskModalCnt.id = 'task-modal-container';
+body.appendChild(taskModalCnt);
+
+const modalTopTwo = document.createElement('div');
+modalTopTwo.id = 'modal-top-two';
+taskModalCnt.appendChild(modalTopTwo);
+
+const modalH3Two = document.createElement('h3');
+modalH3Two.classList.add('modal-h3-2');
+modalTopTwo.appendChild(modalH3Two);
+modalH3Two.textContent = 'Add a new task';
+
+const taskFormCnt = document.createElement('div');
+taskFormCnt.id = 'task-form-container';
+taskModalCnt.appendChild(taskFormCnt);
+
+const taskForm = document.createElement('form');
+taskFormCnt.appendChild(taskForm);
+taskForm.setAttribute("action", "/");
+taskForm.setAttribute("method", "get");
+
+const taskFieldset = document.createElement('fieldset');
+taskForm.appendChild(taskFieldset);
+
+const titleLabel = document.createElement('label');
+const titleInput = document.createElement('input');
+titleLabel.setAttribute("for", "title");
+titleInput.setAttribute("type", "text");
+titleInput.setAttribute("name", "title");
+titleLabel.textContent = 'Title:'
+
+taskFieldset.appendChild(titleLabel);
+taskFieldset.appendChild(titleInput);
+
+const descriptionLabel = document.createElement('label');
+const descriptionInput = document.createElement('input');
+descriptionLabel.setAttribute("for", "description");
+descriptionInput.setAttribute("type", "text");
+descriptionInput.setAttribute("name", "description");
+descriptionLabel.textContent = 'Details:'
+
+taskFieldset.appendChild(descriptionLabel);
+taskFieldset.appendChild(descriptionInput);
+
+const dueDateLabel = document.createElement('label');
+const dueDateInput = document.createElement('input');
+dueDateLabel.setAttribute("for", "duedate");
+dueDateInput.setAttribute("type", "date");
+dueDateInput.setAttribute("name", "duedate");
+dueDateLabel.textContent = 'Due Date:'
+
+taskFieldset.appendChild(dueDateLabel);
+taskFieldset.appendChild(dueDateInput);
+
+const priorityLabel = document.createElement('label');
+const priorityInput = document.createElement('select');
+priorityLabel.setAttribute("for", "priority");
+//priorityInput.setAttribute("type", "date");
+priorityInput.setAttribute("name", "priority");
+priorityLabel.textContent = 'Priority:'
+
+const emptyOpt = document.createElement('option');
+const highOpt = document.createElement('option');
+const mediumOpt = document.createElement('option');
+const lowOpt = document.createElement('option');
+
+highOpt.value = 'high';
+mediumOpt.value = 'medium';
+lowOpt.value = 'low';
+
+highOpt.textContent = 'High';
+mediumOpt.textContent = 'Medium';
+lowOpt.textContent = 'Low';
+
+
+priorityInput.appendChild(emptyOpt);
+priorityInput.appendChild(highOpt);
+priorityInput.appendChild(mediumOpt);
+priorityInput.appendChild(lowOpt);
+
+taskFieldset.appendChild(priorityLabel);
+taskFieldset.appendChild(priorityInput);
+
+const subTaskBtn = document.createElement('button');
+subTaskBtn.setAttribute("type", "submit");
+subTaskBtn.className = 'submit';
+subTaskBtn.textContent = 'Submit';
+taskFieldset.appendChild(subTaskBtn);
+
+taskModalCnt.style.display = 'none';
+
+
 (function loadModal() {
     addProjBtn.addEventListener('click', () => {
         modalCnt.style.display = 'flex';
@@ -145,6 +280,12 @@ modalCnt.appendChild(projFormCnt);
 })();
 
 
+/* subTaskBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    addTask();
+    console.log(projectsList);
+}); */
+
 //create form
 
 const form = document.createElement('form');
@@ -159,15 +300,12 @@ form.setAttribute("action", "/");
 form.setAttribute("method", "get");
 projFormBtn.classList.add("submit");
 
-
 projectLable.setAttribute("for", "title");
 projectInput.setAttribute("type", "text");
 projectInput.setAttribute("name", "title");
 projectInput.setAttribute("id", "title");
 projectInput.setAttribute("required", "");
 projFormBtn.setAttribute("type", "submit");
-
-
 
 projectLable.innerHTML = 'Title:'
 projFormBtn.innerHTML = 'Submit';
@@ -192,4 +330,4 @@ projFormBtn.addEventListener('click', function(event){
 const addTasksBtn = document.createElement('button');
 
 
-export { projFormBtn, projectInput, renderProjects };
+export { projFormBtn, projectInput, renderProjects, titleInput, descriptionInput, dueDateInput, priorityInput };

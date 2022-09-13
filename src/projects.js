@@ -19,7 +19,6 @@ projectsList.push(reminders);
 
 reminders.todos.push(defaultTodo);
 console.log(projectsList);
-console.log(reminders.todos.length);
 
 export function addProject() {
     const title = projectInput.value;

@@ -1,6 +1,5 @@
 import { addDays, format } from "date-fns";
 import parseISO from "date-fns/parseISO";
-import { titleInput, descriptionInput, dueDateInput, priorityInput } from './UI.js';
 import { projectsList } from './projects.js';
 
 class Todo {

@@ -1,7 +1,5 @@
+import { id } from 'date-fns/locale';
 import { defaultTodo } from './todo.js';
-import { projFormBtn } from './UI.js';
-import { projectInput } from './UI.js';
-import { renderProjects } from './UI.js';
 
 
 
@@ -11,10 +9,11 @@ class Project {
     constructor(title, todos) {
         this.title = title;
         this.todos = todos;
+        this.id = Date.now();
     }
 }
 
-let reminders = new Project('Reminders', []);
+let reminders = new Project('Reminders', [], Date.now());
 projectsList.push(reminders);
 
 reminders.todos.push(defaultTodo);

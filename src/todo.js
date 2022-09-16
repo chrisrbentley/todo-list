@@ -3,12 +3,13 @@ import parseISO from "date-fns/parseISO";
 import { projectsList } from './projects.js';
 
 class Todo {
-    constructor(title, description, dueDate, priority, completed) {
+    constructor(title, description, dueDate, priority, completed, id) {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
         this.priority = priority;
         this.completed = completed;
+        this.id = Date.now();
     }
 }
 let date = new Date();

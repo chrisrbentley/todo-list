@@ -6,7 +6,7 @@ import { defaultTodo } from './todo.js';
 let projectsList = [];
 
 class Project {
-    constructor(title, todos) {
+    constructor(title, todos, id) {
         this.title = title;
         this.todos = todos;
         this.id = Date.now();

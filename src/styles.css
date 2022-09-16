@@ -1,335 +1,55 @@
-body {
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
     margin: 0;
-    padding: 0;
+}
+body {
+    min-height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4efef;
 }
 
-#header-sec {
+header {
     background-color: red;
-}
-
-#heading {
-    color: #f4efef;
-    position: relative;
-    left: 80px;
-    width: 91vw;
 }
 
 main {
     display: flex;
     flex-direction: row;
-    /* filter: blur(2px); */
 }
 
-#nav-bar {
-    background-color: #e6e3e3;
+nav {
+    /* height: 55.8rem;
+    width: 20rem; */
+    display: flex;
+    flex-direction: column;
     height: 91.8vh;
     width: 20vw;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    background-color: #e6e3e3
 }
 
-#top-section {
-    height: 20vh;
+#nav-top {
+    height: 25vh;
+    width: 20vw;
+    /* border: solid 3px black; */
 }
 
-#project-container {
+#nav-bottom {
+    height: 75vh;
+    width: 20vw;
+    /* border: solid 3px black; */
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    align-items: center;}
-
-#project-container > h3 {
-    font-size: 26px;
-}
-
-#project-list {
-    /* display: inline-block; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-#project-list > ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.project {
-    padding: 5px;
-    font-size: 18px;
-    height: 3vh;
-    width: 15vw;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project:hover {
-    cursor: pointer;
-    background-color: #f4efef;
 }
 
 #add-project-btn {
-    height: 5vh;
-    width: 15vw;
-    border-radius: 15px;
-    border: none;
-    font-size: 18px;
-    background-color: #e6e3e3;
+    height: 2rem;
+    width: 6rem;
 }
 
 #add-project-btn:hover {
     cursor: pointer;
-    background-color: #f4efef;
-}
-
-#tasks-container {
-    background-color: #f4efef;
-    width: 100vw;
-    height: 91.8vh;
-    display: flex;
-    flex-direction: column;
-}
-
-#tasks-top {
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#current-task {
-    background-color: #e6e3e3;
-    border-radius: 10px;
-    height: 80vh;
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
-}
-
-#tasks-bottom {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.task {
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    height: 5vh;
-    width: 75vw;
-    background-color: #e6e3e3;
-}
-
-.task-item {
-    display: flex;
-}
-
-.task-name {
-    width: 40vw;
-    align-items: center;
-    font-size: 24px;
-    position: relative;
-    left: 100px;
-}
-
-.task-details {
-    width: 10vw;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 100px;
-}
-
-.submit {
-    height: 2rem;
-    width: 5rem;
-    background-color: red;
-    border-radius: 5px;
-    font-size: 18px;
-    border: none;
-    color: #f4efef;
-    padding: 5px;
-}
-
-.submit:hover {
-    cursor: pointer;
-}
-
-.task-details > button:hover {
-    cursor: pointer;
-}
-
-
-.task-date {
-    width: 9vw;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 100px;
-}
-
-#empty-project {
-    font-size: 24px;
-}
-
-#modal-container {
-    background-color: #e6e3e3;
-    display: none;
-    position: fixed;
-    height: 25vh;
-    width: 25rem;
-    top: 17rem;
-    left: 33.5rem;
-    border: 3px solid red;
-    border-radius: 10px;
-    z-index: 1;
-}
-
-#modal-top {
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 25rem;
-    background-color: red;
-}
-
-.modal-h3 {
-    display: flex;
-    align-items: center;
-    color: #f4efef;
-    font-size: 1.8rem;
-}
-
-.exit-button {
-    height: 5vh;
-    width: 2vw;
-    color: #f4efef;
-    background-color: red;
-    border: none;
-    font-size: 2rem;
-    position: relative;
-    left: 6.5rem;
-}
-
-.exit-button:hover {
-    cursor: pointer;
-}
-
-#proj-form-container {
-    height: 20vh;
-    width: 21rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4efef;
-    border-radius: 10px;
-}
-
-.form {
-    height: 20vh;
-    width: 20vw;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-
-#proj-form-container > .form > fieldset {
-    display: flex;
-    flex-direction: column;
-    height: 18vh;
-    background-color: #f4efef;
-    border: none;
-}
-
-#proj-form-container > .form > fieldset > label {
-    font-size: 24px;
-}
-
-#proj-form-container > .form > fieldset > input {
-    height: 2rem;
-    border-radius: 10px;
-    margin: 10px;
-    width: 20rem;
-    font-size: 20px;
-}
-
-#proj-form-container > .form > fieldset > button {
-    height: 2rem;
-    width: 7rem;
-    position: relative;
-    left: 13.3rem;
-    color: #f4efef;
-    background-color: red;
-    border: none;
-    border-radius: 0.25rem;
-}
-
-#proj-form-container > .form > fieldset > button:hover {
-    cursor: pointer;
-}
-
-.form > fieldset > label {
-    margin: 10px;
-}
-
-.form > fieldset > button {
-    margin: 10px;
-}
-
-.new-task-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    width: 6rem;
-    background-color: hotpink;
-    border-radius: 15px;
-}
-
-.new-task-btn:hover {
-    cursor: pointer;
-}
-
-#task-modal-container {
-    height: 25rem;
-    width: 40rem;
-    background-color: green;
-    background-color: #e6e3e3;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 20rem;
-    left: 35.5rem;
-    border: 3px solid red;
-    border-radius: 10px;
-}
-
-#modal-top-two {
-    height: 2.5rem;
-    width: 40rem;
-    background-color: red;
-    display: flex;
-    align-items: center;
-}
-
-#task-form-container > form {
-    height: 22.2rem;
-}
-
-#task-form-container > form > fieldset{
-    height: 21.5rem;
-    border: none;
 }

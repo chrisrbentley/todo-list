@@ -16,8 +16,6 @@ let date = new Date();
 let formattedDate = format(date, "Pp")
 let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false);
 
-//console.log(formattedDate);
-
 let newTodo;
 export function addTask() {
     const title = titleInput.value;

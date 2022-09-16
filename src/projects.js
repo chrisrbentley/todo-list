@@ -14,6 +14,7 @@ class Project {
 }
 
 let reminders = new Project('Reminders', [], Date.now());
+
 projectsList.push(reminders);
 
 reminders.todos.push(defaultTodo);

@@ -45,6 +45,14 @@ nav {
     align-items: center;
 }
 
+/* #projects-container {
+   
+} */
+
+#projects-container > ul {
+    list-style: none;
+}
+
 #add-project-btn {
     height: 2rem;
     width: 6rem;
@@ -52,4 +60,35 @@ nav {
 
 #add-project-btn:hover {
     cursor: pointer;
+}
+
+#proj-modal-cnt {
+    height: 25vh;
+    width: 25vw;
+    background-color: green;
+    position: fixed;
+    top: 25rem;
+    left: 45rem;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+#proj-modal-top {
+    background-color: red;
+}
+
+#proj-modal-header {
+    background-color: red;
+}
+
+#proj-form-container {
+    background-color: yellow;
+    height: 20vh;
+    width: 25vw;
+}
+
+#proj-form-container > form > fieldset {
+    display: flex;
+    flex-direction: column;
+    height: 18vh;
 }

@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n/* #projects-container {\n   \n} */\n\n#projects-container > ul {\n    list-style: none;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;IACtC,gBAAgB;IAChB,SAAS;AACb;AACA;IACI,gBAAgB;IAChB,SAAS;IACT,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI;mBACe;IACf,aAAa;IACb,sBAAsB;IACtB,cAAc;IACd,WAAW;IACX;AACJ;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;IAC7B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;;GAEG;;AAEH;IACI,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;AAChB","sourcesContent":["html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n/* #projects-container {\n   \n} */\n\n#projects-container > ul {\n    list-style: none;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;IACtC,gBAAgB;IAChB,SAAS;AACb;AACA;IACI,gBAAgB;IAChB,SAAS;IACT,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI;mBACe;IACf,aAAa;IACb,sBAAsB;IACtB,cAAc;IACd,WAAW;IACX;AACJ;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;IAC7B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;GACG,eAAe;GACf,yBAAyB;AAC5B;;AAEA;IACI,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;AAChB","sourcesContent":["html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -20721,6 +20721,7 @@ module.exports = styleTagTransform;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "closeBtn": () => (/* binding */ closeBtn),
 /* harmony export */   "newProjBtn": () => (/* binding */ newProjBtn),
 /* harmony export */   "projFormBtn": () => (/* binding */ projFormBtn),
 /* harmony export */   "projModal": () => (/* binding */ projModal),
@@ -20777,18 +20778,22 @@ const projModal = document.createElement('div');
 const projModalTop = document.createElement('div');
 const projModalHeader = document.createElement('h3');
 const projFormCnt = document.createElement('div');
+const closeBtn = document.createElement('button');
 
 projModal.id = 'proj-modal-cnt';
 projModalTop.id = 'proj-modal-top';
 projModalHeader.id = 'proj-modal-header';
 projFormCnt.id = 'proj-form-container';
+closeBtn.id = 'exit-button';
 
 projModalHeader.textContent = 'Add a new project'
+closeBtn.textContent = 'X';
 
 body.appendChild(projModal);
 projModal.appendChild(projModalTop);
 projModalTop.appendChild(projModalHeader);
 projModal.appendChild(projFormCnt);
+projModalTop.appendChild(closeBtn);
 
 //create form
 const form = document.createElement('form');
@@ -20868,9 +20873,17 @@ function addProj() {
         _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
         renderProjects();
         _UI__WEBPACK_IMPORTED_MODULE_2__.projectInput.value = '';
+        _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
     })
 }
 addProj();
+
+function closeProjModal() {
+    _UI__WEBPACK_IMPORTED_MODULE_2__.closeBtn.addEventListener('click', () => {
+        _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
+    })
+}
+closeProjModal();
 
 /***/ }),
 

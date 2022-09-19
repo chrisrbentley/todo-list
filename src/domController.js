@@ -1,6 +1,6 @@
 import { add } from 'lodash';
 import { projectsList, addProject } from './projects';
-import { newProjBtn, projUL, projModal, projFormBtn, projectInput } from './UI';
+import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn } from './UI';
 
 function renderProjects() {
     for (let i = 0; i < projectsList.length; i++) {
@@ -25,6 +25,14 @@ function addProj() {
         projUL.innerHTML = '';
         renderProjects();
         projectInput.value = '';
+        projModal.style.display = 'none';
     })
 }
 addProj();
+
+function closeProjModal() {
+    closeBtn.addEventListener('click', () => {
+        projModal.style.display = 'none';
+    })
+}
+closeProjModal();

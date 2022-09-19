@@ -44,18 +44,22 @@ const projModal = document.createElement('div');
 const projModalTop = document.createElement('div');
 const projModalHeader = document.createElement('h3');
 const projFormCnt = document.createElement('div');
+const closeBtn = document.createElement('button');
 
 projModal.id = 'proj-modal-cnt';
 projModalTop.id = 'proj-modal-top';
 projModalHeader.id = 'proj-modal-header';
 projFormCnt.id = 'proj-form-container';
+closeBtn.id = 'exit-button';
 
 projModalHeader.textContent = 'Add a new project'
+closeBtn.textContent = 'X';
 
 body.appendChild(projModal);
 projModal.appendChild(projModalTop);
 projModalTop.appendChild(projModalHeader);
 projModal.appendChild(projFormCnt);
+projModalTop.appendChild(closeBtn);
 
 //create form
 const form = document.createElement('form');
@@ -92,4 +96,4 @@ fieldset.appendChild(projFormBtn);
 
 projModal.style.display = 'none';
 
-export { newProjBtn, projUL, projModal, projFormBtn, projectInput };
+export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn };

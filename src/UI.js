@@ -89,11 +89,8 @@ fieldset.appendChild(projectLabel);
 fieldset.appendChild(projectInput);
 fieldset.appendChild(projFormBtn);
 
-/* projFormBtn.addEventListener('click', function(event){
-    event.preventDefault();
-    addProject();
-}); */
-
 projModal.style.display = 'none';
 
-export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn };
+
+
+export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content };

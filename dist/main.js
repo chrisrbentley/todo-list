@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;IACtC,gBAAgB;IAChB,SAAS;AACb;AACA;IACI,gBAAgB;IAChB,SAAS;IACT,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI;mBACe;IACf,aAAa;IACb,sBAAsB;IACtB,cAAc;IACd,WAAW;IACX;AACJ;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;IAC7B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;GACG,eAAe;GACf,yBAAyB;AAC5B;;AAEA;IACI,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;AAChB","sourcesContent":["html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}\n\n#content {\n    width: 100rem;\n    display: flex;\n    flex-direction: column;\n}\n\n.task {\n    display: flex;\n    flex-direction: row;\n    border-radius: 15px;\n    height: 5vh;\n    width: 75vw;\n    background-color: #e6e3e3;\n    margin: 10px;\n}\n\n.task-item {\n    display: flex;\n}\n\n.task-name {\n    width: 40vw;\n    align-items: center;\n    font-size: 24px;\n    position: relative;\n    left: 100px;\n}\n\n.task-details {\n    width: 10vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.task-date {\n    width: 9vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n#new-task-btn {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 2rem;\n    width: 6rem;\n    background-color: hotpink;\n    border-radius: 15px;\n}\n\n#new-task-btn:hover {\n    cursor: pointer;\n}\n\n#empty-project {\n    font-size: 24px;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;IACtC,gBAAgB;IAChB,SAAS;AACb;AACA;IACI,gBAAgB;IAChB,SAAS;IACT,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI;mBACe;IACf,aAAa;IACb,sBAAsB;IACtB,cAAc;IACd,WAAW;IACX;AACJ;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;IAC7B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;GACG,eAAe;GACf,yBAAyB;AAC5B;;AAEA;IACI,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,WAAW;IACX,WAAW;IACX,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,mBAAmB;IACnB,eAAe;IACf,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,UAAU;IACV,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,WAAW;IACX,yBAAyB;IACzB,mBAAmB;AACvB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,eAAe;AACnB","sourcesContent":["html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}\n\n#content {\n    width: 100rem;\n    display: flex;\n    flex-direction: column;\n}\n\n.task {\n    display: flex;\n    flex-direction: row;\n    border-radius: 15px;\n    height: 5vh;\n    width: 75vw;\n    background-color: #e6e3e3;\n    margin: 10px;\n}\n\n.task-item {\n    display: flex;\n}\n\n.task-name {\n    width: 40vw;\n    align-items: center;\n    font-size: 24px;\n    position: relative;\n    left: 100px;\n}\n\n.task-details {\n    width: 10vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.task-date {\n    width: 9vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n#new-task-btn {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 2rem;\n    width: 6rem;\n    background-color: hotpink;\n    border-radius: 15px;\n}\n\n#new-task-btn:hover {\n    cursor: pointer;\n}\n\n#empty-project {\n    font-size: 24px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -20722,6 +20722,7 @@ module.exports = styleTagTransform;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "closeBtn": () => (/* binding */ closeBtn),
+/* harmony export */   "content": () => (/* binding */ content),
 /* harmony export */   "newProjBtn": () => (/* binding */ newProjBtn),
 /* harmony export */   "projFormBtn": () => (/* binding */ projFormBtn),
 /* harmony export */   "projModal": () => (/* binding */ projModal),
@@ -20823,12 +20824,9 @@ fieldset.appendChild(projectLabel);
 fieldset.appendChild(projectInput);
 fieldset.appendChild(projFormBtn);
 
-/* projFormBtn.addEventListener('click', function(event){
-    event.preventDefault();
-    addProject();
-}); */
-
 projModal.style.display = 'none';
+
+
 
 
 
@@ -20850,15 +20848,70 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function renderProjects() {
+function renderAll() {
+    _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
     for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList.length; i++) {
-        const project = document.createElement('li');
+        let project = document.createElement('li');
         project.className = 'project';
+        project.id = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList[i].id;
         project.textContent = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList[i].title;
         _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.appendChild(project);
+        console.log(project);
+
+        project.addEventListener('click', () => {
+            let filteredList = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList.filter(function(fList) {
+                return fList.id == project.id;
+            })
+            if (filteredList[0].todos.length > 0) {
+                _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+                for (let i = 0; i < filteredList[0].todos.length; i++) {
+                    console.log(filteredList[0].todos[i]);
+                    const task = document.createElement('div');
+                    const taskName = document.createElement('div');
+                    const taskDetails = document.createElement('div');
+                    const detailsButton = document.createElement('button');
+                    const taskDate = document.createElement('div');
+
+                    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(task);
+                    task.appendChild(taskName);
+                    task.appendChild(taskDetails);
+                    taskDetails.appendChild(detailsButton);
+                    task.appendChild(taskDate);
+
+                    task.className = 'task';
+                    taskName.classList.add('task-item', 'task-name');
+                    taskDetails.classList.add('task-item', 'task-details');
+                    taskDate.classList.add('task-item', 'task-date');
+
+                    taskName.textContent = filteredList[0].todos[i].title;
+                    detailsButton.textContent = 'Details';
+                    taskDate.textContent = filteredList[0].todos[i].dueDate;
+                }
+                const newTask = document.createElement('btn');
+                    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
+                    newTask.id = 'new-task-btn';
+                    newTask.textContent = '+ New Task';
+            } else {
+                console.log('This project is empty.');
+                _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+                const emptyProjCnt = document.createElement('div');
+                const emptyProjP = document.createElement('p');
+                emptyProjP.textContent = 'This project is empty.'
+
+                emptyProjP.id = 'empty-project';
+
+                _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(emptyProjCnt);
+                emptyProjCnt.appendChild(emptyProjP);
+
+                const newTask = document.createElement('btn');
+                _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
+                newTask.id = 'new-task-btn';
+                newTask.textContent = '+ New Task';
+            }
+        })
     }
-};
-renderProjects();
+}
+renderAll();
 
 (function displayProjModal() {
     _UI__WEBPACK_IMPORTED_MODULE_2__.newProjBtn.addEventListener('click', () => {
@@ -20870,10 +20923,11 @@ function addProj() {
     _UI__WEBPACK_IMPORTED_MODULE_2__.projFormBtn.addEventListener('click', function(event) {
         event.preventDefault();
         (0,_projects__WEBPACK_IMPORTED_MODULE_1__.addProject)();
-        _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
-        renderProjects();
+        console.log(_projects__WEBPACK_IMPORTED_MODULE_1__.projectsList);
+        //projUL.innerHTML = '';
         _UI__WEBPACK_IMPORTED_MODULE_2__.projectInput.value = '';
         _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
+        renderAll();
     })
 }
 addProj();
@@ -20962,6 +21016,7 @@ class Todo {
 let date = new Date();
 let formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(date, "Pp")
 let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false);
+
 
 let newTodo;
 /* export function addTask() {

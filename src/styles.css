@@ -105,3 +105,65 @@ nav {
     flex-direction: column;
     height: 18vh;
 }
+
+#content {
+    width: 100rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 5vh;
+    width: 75vw;
+    background-color: #e6e3e3;
+    margin: 10px;
+}
+
+.task-item {
+    display: flex;
+}
+
+.task-name {
+    width: 40vw;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    left: 100px;
+}
+
+.task-details {
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+
+.task-date {
+    width: 9vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 100px;
+}
+
+#new-task-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    background-color: hotpink;
+    border-radius: 15px;
+}
+
+#new-task-btn:hover {
+    cursor: pointer;
+}
+
+#empty-project {
+    font-size: 24px;
+}

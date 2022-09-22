@@ -106,6 +106,68 @@ nav {
     height: 18vh;
 }
 
+#task-modal-container {
+    background-color: orange;
+    position: fixed;
+    height: 25rem;
+    width: 40rem;
+    top: 15rem;
+    left: 34rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#task-modal-top {
+    background-color: pink;
+    margin-top: 0;
+    height: 3rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#task-modal-header {
+    background-color: red;
+    height: 3rem;
+    width: 37rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#task-modal-button {
+    background-color: black;
+    height: 3rem;
+    width: 3rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#task-modal-button:hover {
+    cursor: pointer;
+}
+
+#task-modal-bottom {
+    background-color: limegreen;
+    height: 22rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-fieldset {
+    border: solid 3px black;
+    height: 18rem;
+    width: 35rem;
+}
+
+
+
 #content {
     width: 100rem;
     display: flex;

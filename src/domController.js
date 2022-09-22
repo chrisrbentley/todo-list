@@ -1,6 +1,6 @@
 import { add } from 'lodash';
 import { projectsList, addProject } from './projects';
-import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content } from './UI';
+import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt } from './UI';
 
 function renderAll() {
     projUL.innerHTML = '';
@@ -41,10 +41,11 @@ function renderAll() {
                     detailsButton.textContent = 'Details';
                     taskDate.textContent = filteredList[0].todos[i].dueDate;
                 }
-                const newTask = document.createElement('btn');
+                    const newTask = document.createElement('btn');
                     content.appendChild(newTask);
                     newTask.id = 'new-task-btn';
                     newTask.textContent = '+ New Task';
+                    newTask.addEventListener('click', displayTaskModal);
             } else {
                 console.log('This project is empty.');
                 content.innerHTML = '';
@@ -61,6 +62,7 @@ function renderAll() {
                 content.appendChild(newTask);
                 newTask.id = 'new-task-btn';
                 newTask.textContent = '+ New Task';
+                newTask.addEventListener('click', displayTaskModal);
             }
         })
     }
@@ -72,6 +74,11 @@ renderAll();
         projModal.style.display = 'flex';
     })
 })();
+
+function displayTaskModal() {
+    console.log('MODAL!');
+    taskModalCnt.style.display = 'flex';
+}
 
 function addProj() {
     projFormBtn.addEventListener('click', function(event) {

@@ -18,7 +18,7 @@ let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project
 
 
 let newTodo;
-/* export function addTask() {
+function addTask() {
     const title = titleInput.value;
     const description = descriptionInput.value;
     const dueDate = dueDateInput.value;
@@ -29,6 +29,6 @@ let newTodo;
     newTodo = new Todo(title, description, dueDate, priority, completed, id);
     console.log(newTodo);
     return newTodo;
-} */
+}
 
-export { defaultTodo, formattedDate, newTodo };
+export { defaultTodo, formattedDate, newTodo, addTask };

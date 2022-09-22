@@ -93,4 +93,106 @@ projModal.style.display = 'none';
 
 
 
-export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content };
+
+//////
+
+
+
+console.log('444');
+const taskModalCnt = document.createElement('div');
+const taskModalTop = document.createElement('div');
+const taskModalBtm = document.createElement('div');
+const taskModalHeader = document.createElement('h3');
+const taskModalBtn = document.createElement('btn');
+const taskForm = document.createElement('form');
+const taskFieldset = document.createElement('fieldset');
+
+taskModalCnt.id = 'task-modal-container';
+taskModalTop.id = 'task-modal-top';
+taskModalHeader.id = 'task-modal-header';
+taskModalBtn.id = 'task-modal-button';
+taskModalBtm.id = 'task-modal-bottom';
+taskFieldset.id = 'task-fieldset';
+
+taskForm.setAttribute("action", "/");
+taskForm.setAttribute("method", "get");
+
+taskModalHeader.textContent = 'Add a new task';
+taskModalBtn.textContent = 'X';
+
+body.appendChild(taskModalCnt);
+taskModalCnt.appendChild(taskModalTop);
+taskModalCnt.appendChild(taskModalBtm);
+taskModalTop.appendChild(taskModalHeader);
+taskModalTop.appendChild(taskModalBtn);
+taskModalBtm.appendChild(taskForm);
+taskForm.appendChild(taskFieldset);
+
+const titleLabel = document.createElement('label');
+const titleInput = document.createElement('input');
+titleLabel.setAttribute("for", "title");
+titleInput.setAttribute("type", "text");
+titleInput.setAttribute("name", "title");
+titleLabel.textContent = 'Title:'
+taskFieldset.appendChild(titleLabel);
+taskFieldset.appendChild(titleInput);
+
+const descriptionLabel = document.createElement('label');
+const descriptionInput = document.createElement('input');
+descriptionLabel.setAttribute("for", "description");
+descriptionInput.setAttribute("type", "text");
+descriptionInput.setAttribute("name", "description");
+descriptionLabel.textContent = 'Details:'
+
+taskFieldset.appendChild(descriptionLabel);
+taskFieldset.appendChild(descriptionInput);
+
+const dueDateLabel = document.createElement('label');
+const dueDateInput = document.createElement('input');
+dueDateLabel.setAttribute("for", "duedate");
+dueDateInput.setAttribute("type", "date");
+dueDateInput.setAttribute("name", "duedate");
+dueDateLabel.textContent = 'Due Date:'
+
+taskFieldset.appendChild(dueDateLabel);
+taskFieldset.appendChild(dueDateInput);
+
+const priorityLabel = document.createElement('label');
+const priorityInput = document.createElement('select');
+priorityLabel.setAttribute("for", "priority");
+//priorityInput.setAttribute("type", "date");
+priorityInput.setAttribute("name", "priority");
+priorityLabel.textContent = 'Priority:'
+
+const emptyOpt = document.createElement('option');
+const highOpt = document.createElement('option');
+const mediumOpt = document.createElement('option');
+const lowOpt = document.createElement('option');
+
+highOpt.value = 'high';
+mediumOpt.value = 'medium';
+lowOpt.value = 'low';
+
+highOpt.textContent = 'High';
+mediumOpt.textContent = 'Medium';
+lowOpt.textContent = 'Low';
+
+
+priorityInput.appendChild(emptyOpt);
+priorityInput.appendChild(highOpt);
+priorityInput.appendChild(mediumOpt);
+priorityInput.appendChild(lowOpt);
+
+taskFieldset.appendChild(priorityLabel);
+taskFieldset.appendChild(priorityInput);
+
+const subTaskBtn = document.createElement('button');
+subTaskBtn.setAttribute("type", "submit");
+subTaskBtn.className = 'submit';
+subTaskBtn.textContent = 'Submit';
+taskFieldset.appendChild(subTaskBtn);
+
+taskModalCnt.style.display = 'none';
+
+
+export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt };

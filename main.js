@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}\n\n#task-modal-container {\n    background-color: orange;\n    position: fixed;\n    height: 25rem;\n    width: 40rem;\n    top: 15rem;\n    left: 34rem;\n    display: flex;\n    flex-direction: column;\n}\n\n#task-modal-top {\n    background-color: pink;\n    margin-top: 0;\n    height: 3rem;\n    width: 40rem;\n    display: flex;\n    flex-direction: row;\n}\n\n#task-modal-header {\n    background-color: red;\n    height: 3rem;\n    width: 37rem;\n    margin-top: 0;\n    display: flex;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button {\n    background-color: black;\n    height: 3rem;\n    width: 3rem;\n    background-color: red;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button:hover {\n    cursor: pointer;\n}\n\n#task-modal-bottom {\n    background-color: limegreen;\n    height: 22rem;\n    width: 40rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n#task-fieldset {\n    border: solid 3px black;\n    height: 18rem;\n    width: 35rem;\n}\n\n\n\n#content {\n    width: 100rem;\n    display: flex;\n    flex-direction: column;\n}\n\n.task {\n    display: flex;\n    flex-direction: row;\n    border-radius: 15px;\n    height: 5vh;\n    width: 75vw;\n    background-color: #e6e3e3;\n    margin: 10px;\n}\n\n.task-item {\n    display: flex;\n}\n\n.task-name {\n    width: 40vw;\n    align-items: center;\n    font-size: 24px;\n    position: relative;\n    left: 100px;\n}\n\n.task-details {\n    width: 10vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.task-date {\n    width: 9vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n#new-task-btn {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 2rem;\n    width: 6rem;\n    background-color: hotpink;\n    border-radius: 15px;\n}\n\n#new-task-btn:hover {\n    cursor: pointer;\n}\n\n#empty-project {\n    font-size: 24px;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;IACtC,gBAAgB;IAChB,SAAS;AACb;AACA;IACI,gBAAgB;IAChB,SAAS;IACT,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI;mBACe;IACf,aAAa;IACb,sBAAsB;IACtB,cAAc;IACd,WAAW;IACX;AACJ;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;IAC7B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;GACG,eAAe;GACf,yBAAyB;AAC5B;;AAEA;IACI,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,uBAAuB;IACvB,eAAe;IACf,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;AAChB;;AAEA;IACI,wBAAwB;IACxB,eAAe;IACf,aAAa;IACb,YAAY;IACZ,UAAU;IACV,WAAW;IACX,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,sBAAsB;IACtB,aAAa;IACb,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,qBAAqB;IACrB,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,uBAAuB;IACvB,YAAY;IACZ,WAAW;IACX,qBAAqB;IACrB,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,2BAA2B;IAC3B,aAAa;IACb,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;AACvB;;AAEA;IACI,uBAAuB;IACvB,aAAa;IACb,YAAY;AAChB;;;;AAIA;IACI,aAAa;IACb,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,WAAW;IACX,WAAW;IACX,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,mBAAmB;IACnB,eAAe;IACf,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,UAAU;IACV,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,WAAW;IACX,yBAAyB;IACzB,mBAAmB;AACvB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,eAAe;AACnB","sourcesContent":["html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: green;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: yellow;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}\n\n#task-modal-container {\n    background-color: orange;\n    position: fixed;\n    height: 25rem;\n    width: 40rem;\n    top: 15rem;\n    left: 34rem;\n    display: flex;\n    flex-direction: column;\n}\n\n#task-modal-top {\n    background-color: pink;\n    margin-top: 0;\n    height: 3rem;\n    width: 40rem;\n    display: flex;\n    flex-direction: row;\n}\n\n#task-modal-header {\n    background-color: red;\n    height: 3rem;\n    width: 37rem;\n    margin-top: 0;\n    display: flex;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button {\n    background-color: black;\n    height: 3rem;\n    width: 3rem;\n    background-color: red;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button:hover {\n    cursor: pointer;\n}\n\n#task-modal-bottom {\n    background-color: limegreen;\n    height: 22rem;\n    width: 40rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n#task-fieldset {\n    border: solid 3px black;\n    height: 18rem;\n    width: 35rem;\n}\n\n\n\n#content {\n    width: 100rem;\n    display: flex;\n    flex-direction: column;\n}\n\n.task {\n    display: flex;\n    flex-direction: row;\n    border-radius: 15px;\n    height: 5vh;\n    width: 75vw;\n    background-color: #e6e3e3;\n    margin: 10px;\n}\n\n.task-item {\n    display: flex;\n}\n\n.task-name {\n    width: 40vw;\n    align-items: center;\n    font-size: 24px;\n    position: relative;\n    left: 100px;\n}\n\n.task-details {\n    width: 10vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.task-date {\n    width: 9vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n#new-task-btn {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 2rem;\n    width: 6rem;\n    background-color: hotpink;\n    border-radius: 15px;\n}\n\n#new-task-btn:hover {\n    cursor: pointer;\n}\n\n#empty-project {\n    font-size: 24px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: #f4efef;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: #e6e3e3;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}\n\n#task-modal-container {\n    background-color: orange;\n    position: fixed;\n    height: 25rem;\n    width: 40rem;\n    top: 15rem;\n    left: 34rem;\n    display: flex;\n    flex-direction: column;\n    box-shadow: 5px 5px #9c9898;\n}\n\n#task-modal-top {\n    background-color: pink;\n    margin-top: 0;\n    height: 3rem;\n    width: 40rem;\n    display: flex;\n    flex-direction: row;\n}\n\n#task-modal-header {\n    background-color: red;\n    height: 3rem;\n    width: 37rem;\n    margin-top: 0;\n    display: flex;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button {\n    background-color: black;\n    height: 3rem;\n    width: 3rem;\n    background-color: red;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button:hover {\n    cursor: pointer;\n}\n\n#task-modal-bottom {\n    background-color: #e6e3e3;\n    height: 22rem;\n    width: 40rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    /* border: solid 3px black; */\n}\n\n#task-fieldset {\n    /* border: solid 3px black; */\n    height: 18rem;\n    width: 35rem;\n}\n\n\n\n#content {\n    width: 100rem;\n    display: flex;\n    flex-direction: column;\n}\n\n.task {\n    display: flex;\n    flex-direction: row;\n    border-radius: 15px;\n    height: 5vh;\n    width: 75vw;\n    background-color: #e6e3e3;\n    margin: 10px;\n}\n\n.task-item {\n    display: flex;\n}\n\n.task-name {\n    width: 40vw;\n    align-items: center;\n    font-size: 24px;\n    position: relative;\n    left: 100px;\n}\n\n.task-details {\n    width: 10vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.task-date {\n    width: 9vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.new-task-btn {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 2rem;\n    width: 6rem;\n    background-color: hotpink;\n    border-radius: 15px;\n    cursor: pointer;\n}\n\n\n#new-task-btn:hover {\n    cursor: pointer;\n}\n\n#empty-project {\n    font-size: 24px;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sCAAsC;IACtC,gBAAgB;IAChB,SAAS;AACb;AACA;IACI,gBAAgB;IAChB,SAAS;IACT,aAAa;IACb,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI;mBACe;IACf,aAAa;IACb,sBAAsB;IACtB,cAAc;IACd,WAAW;IACX;AACJ;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;AACjC;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,6BAA6B;IAC7B,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,gBAAgB;AACpB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,uBAAuB;AAC3B;;AAEA;GACG,eAAe;GACf,yBAAyB;AAC5B;;AAEA;IACI,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,WAAW;IACX,yBAAyB;IACzB,eAAe;IACf,UAAU;IACV,WAAW;IACX,mBAAmB;IACnB,sBAAsB;AAC1B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,yBAAyB;IACzB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,YAAY;AAChB;;AAEA;IACI,wBAAwB;IACxB,eAAe;IACf,aAAa;IACb,YAAY;IACZ,UAAU;IACV,WAAW;IACX,aAAa;IACb,sBAAsB;IACtB,2BAA2B;AAC/B;;AAEA;IACI,sBAAsB;IACtB,aAAa;IACb,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,qBAAqB;IACrB,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,uBAAuB;IACvB,YAAY;IACZ,WAAW;IACX,qBAAqB;IACrB,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,yBAAyB;IACzB,aAAa;IACb,YAAY;IACZ,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,6BAA6B;AACjC;;AAEA;IACI,6BAA6B;IAC7B,aAAa;IACb,YAAY;AAChB;;;;AAIA;IACI,aAAa;IACb,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,WAAW;IACX,WAAW;IACX,yBAAyB;IACzB,YAAY;AAChB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,WAAW;IACX,mBAAmB;IACnB,eAAe;IACf,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,UAAU;IACV,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,WAAW;IACX,yBAAyB;IACzB,mBAAmB;IACnB,eAAe;AACnB;;;AAGA;IACI,eAAe;AACnB;;AAEA;IACI,eAAe;AACnB","sourcesContent":["html {\n    /* To make use of full height of page*/\n    min-height: 100%;\n    margin: 0;\n}\nbody {\n    min-height: 100%;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    background-color: #f4efef;\n}\n\nheader {\n    background-color: red;\n}\n\nmain {\n    display: flex;\n    flex-direction: row;\n}\n\nnav {\n    /* height: 55.8rem;\n    width: 20rem; */\n    display: flex;\n    flex-direction: column;\n    height: 91.8vh;\n    width: 20vw;\n    background-color: #e6e3e3\n}\n\n#nav-top {\n    height: 25vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n}\n\n#nav-bottom {\n    height: 75vh;\n    width: 20vw;\n    /* border: solid 3px black; */\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n\n#projects-container {\n    width: 20vw;\n}\n\n#projects-container > ul {\n    display: flex;\n    flex-direction: column;\n    list-style: none;\n}\n\n.project {\n    height: 2rem;\n    display: flex;\n    justify-content: center;\n}\n\n.project:hover {\n   cursor: pointer; \n   background-color: #f4efef;\n}\n\n#add-project-btn {\n    height: 2rem;\n    width: 6rem;\n}\n\n#add-project-btn:hover {\n    cursor: pointer;\n}\n\n#proj-modal-cnt {\n    height: 25vh;\n    width: 25vw;\n    background-color: #f4efef;\n    position: fixed;\n    top: 25rem;\n    left: 45rem;\n    /* display: flex; */\n    flex-direction: column;\n}\n\n#proj-modal-top {\n    background-color: red;\n}\n\n#proj-modal-header {\n    background-color: red;\n}\n\n#proj-form-container {\n    background-color: #e6e3e3;\n    height: 20vh;\n    width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n    display: flex;\n    flex-direction: column;\n    height: 18vh;\n}\n\n#task-modal-container {\n    background-color: orange;\n    position: fixed;\n    height: 25rem;\n    width: 40rem;\n    top: 15rem;\n    left: 34rem;\n    display: flex;\n    flex-direction: column;\n    box-shadow: 5px 5px #9c9898;\n}\n\n#task-modal-top {\n    background-color: pink;\n    margin-top: 0;\n    height: 3rem;\n    width: 40rem;\n    display: flex;\n    flex-direction: row;\n}\n\n#task-modal-header {\n    background-color: red;\n    height: 3rem;\n    width: 37rem;\n    margin-top: 0;\n    display: flex;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button {\n    background-color: black;\n    height: 3rem;\n    width: 3rem;\n    background-color: red;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    font-size: 2rem;\n}\n\n#task-modal-button:hover {\n    cursor: pointer;\n}\n\n#task-modal-bottom {\n    background-color: #e6e3e3;\n    height: 22rem;\n    width: 40rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    /* border: solid 3px black; */\n}\n\n#task-fieldset {\n    /* border: solid 3px black; */\n    height: 18rem;\n    width: 35rem;\n}\n\n\n\n#content {\n    width: 100rem;\n    display: flex;\n    flex-direction: column;\n}\n\n.task {\n    display: flex;\n    flex-direction: row;\n    border-radius: 15px;\n    height: 5vh;\n    width: 75vw;\n    background-color: #e6e3e3;\n    margin: 10px;\n}\n\n.task-item {\n    display: flex;\n}\n\n.task-name {\n    width: 40vw;\n    align-items: center;\n    font-size: 24px;\n    position: relative;\n    left: 100px;\n}\n\n.task-details {\n    width: 10vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.task-date {\n    width: 9vw;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    left: 100px;\n}\n\n.new-task-btn {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 2rem;\n    width: 6rem;\n    background-color: hotpink;\n    border-radius: 15px;\n    cursor: pointer;\n}\n\n\n#new-task-btn:hover {\n    cursor: pointer;\n}\n\n#empty-project {\n    font-size: 24px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -20723,12 +20723,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "closeBtn": () => (/* binding */ closeBtn),
 /* harmony export */   "content": () => (/* binding */ content),
+/* harmony export */   "descriptionInput": () => (/* binding */ descriptionInput),
+/* harmony export */   "dueDateInput": () => (/* binding */ dueDateInput),
 /* harmony export */   "newProjBtn": () => (/* binding */ newProjBtn),
+/* harmony export */   "priorityInput": () => (/* binding */ priorityInput),
 /* harmony export */   "projFormBtn": () => (/* binding */ projFormBtn),
 /* harmony export */   "projModal": () => (/* binding */ projModal),
 /* harmony export */   "projUL": () => (/* binding */ projUL),
 /* harmony export */   "projectInput": () => (/* binding */ projectInput),
-/* harmony export */   "taskModalCnt": () => (/* binding */ taskModalCnt)
+/* harmony export */   "subTaskBtn": () => (/* binding */ subTaskBtn),
+/* harmony export */   "taskModalCnt": () => (/* binding */ taskModalCnt),
+/* harmony export */   "titleInput": () => (/* binding */ titleInput)
 /* harmony export */ });
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
@@ -20827,14 +20832,8 @@ fieldset.appendChild(projFormBtn);
 
 projModal.style.display = 'none';
 
-
-
-
 //////
 
-
-
-console.log('444');
 const taskModalCnt = document.createElement('div');
 const taskModalTop = document.createElement('div');
 const taskModalBtm = document.createElement('div');
@@ -20935,6 +20934,51 @@ taskModalCnt.style.display = 'none';
 
 /***/ }),
 
+/***/ "./src/addTask.js":
+/*!************************!*\
+  !*** ./src/addTask.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addTask": () => (/* binding */ addTask)
+/* harmony export */ });
+/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todo */ "./src/todo.js");
+/* harmony import */ var _UI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UI */ "./src/UI.js");
+/* harmony import */ var _domController__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./domController */ "./src/domController.js");
+/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./projects */ "./src/projects.js");
+
+
+
+
+
+function addTask() {
+    const title = _UI__WEBPACK_IMPORTED_MODULE_1__.titleInput.value;
+    const description = _UI__WEBPACK_IMPORTED_MODULE_1__.descriptionInput.value;
+    const dueDate = _UI__WEBPACK_IMPORTED_MODULE_1__.dueDateInput.value;
+    const priority = _UI__WEBPACK_IMPORTED_MODULE_1__.priorityInput.value;
+    const completed = false;
+    const id = Date.now();
+
+    const newTodo = new _todo__WEBPACK_IMPORTED_MODULE_0__.Todo(title, description, dueDate, priority, completed, id);
+    console.log(newTodo);
+    console.log(_projects__WEBPACK_IMPORTED_MODULE_3__.projectsList);
+    console.log(_domController__WEBPACK_IMPORTED_MODULE_2__.tempID);
+    
+    const index = _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList.findIndex(object => {
+        return object.id == _domController__WEBPACK_IMPORTED_MODULE_2__.tempID;
+    })
+    console.log(index);
+    _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList[index].todos.push(newTodo);
+
+}
+
+
+
+/***/ }),
+
 /***/ "./src/domController.js":
 /*!******************************!*\
   !*** ./src/domController.js ***!
@@ -20943,22 +20987,29 @@ taskModalCnt.style.display = 'none';
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "tempID": () => (/* binding */ tempID)
+/* harmony export */ });
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects */ "./src/projects.js");
-/* harmony import */ var _UI__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./UI */ "./src/UI.js");
+/* harmony import */ var _addTask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./addTask */ "./src/addTask.js");
+/* harmony import */ var _UI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UI */ "./src/UI.js");
 
 
 
 
+
+
+let tempID;
 function renderAll() {
-    _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
+    _UI__WEBPACK_IMPORTED_MODULE_3__.projUL.innerHTML = '';
     for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList.length; i++) {
         let project = document.createElement('li');
         project.className = 'project';
         project.id = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList[i].id;
         project.textContent = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList[i].title;
-        _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.appendChild(project);
+        _UI__WEBPACK_IMPORTED_MODULE_3__.projUL.appendChild(project);
         console.log(project);
 
         project.addEventListener('click', () => {
@@ -20966,7 +21017,7 @@ function renderAll() {
                 return fList.id == project.id;
             })
             if (filteredList[0].todos.length > 0) {
-                _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+                _UI__WEBPACK_IMPORTED_MODULE_3__.content.innerHTML = '';
                 for (let i = 0; i < filteredList[0].todos.length; i++) {
                     console.log(filteredList[0].todos[i]);
                     const task = document.createElement('div');
@@ -20975,7 +21026,7 @@ function renderAll() {
                     const detailsButton = document.createElement('button');
                     const taskDate = document.createElement('div');
 
-                    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(task);
+                    _UI__WEBPACK_IMPORTED_MODULE_3__.content.appendChild(task);
                     task.appendChild(taskName);
                     task.appendChild(taskDetails);
                     taskDetails.appendChild(detailsButton);
@@ -20991,25 +21042,30 @@ function renderAll() {
                     taskDate.textContent = filteredList[0].todos[i].dueDate;
                 }
                     const newTask = document.createElement('btn');
-                    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
-                    newTask.id = 'new-task-btn';
+                    _UI__WEBPACK_IMPORTED_MODULE_3__.content.appendChild(newTask);
+                    newTask.id = project.id;
+                    tempID = newTask.id;
+                    //console.log(tempID);
+                    newTask.className = 'new-task-btn';
                     newTask.textContent = '+ New Task';
                     newTask.addEventListener('click', displayTaskModal);
             } else {
                 console.log('This project is empty.');
-                _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+                _UI__WEBPACK_IMPORTED_MODULE_3__.content.innerHTML = '';
                 const emptyProjCnt = document.createElement('div');
                 const emptyProjP = document.createElement('p');
                 emptyProjP.textContent = 'This project is empty.'
 
                 emptyProjP.id = 'empty-project';
 
-                _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(emptyProjCnt);
+                _UI__WEBPACK_IMPORTED_MODULE_3__.content.appendChild(emptyProjCnt);
                 emptyProjCnt.appendChild(emptyProjP);
 
                 const newTask = document.createElement('btn');
-                _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
-                newTask.id = 'new-task-btn';
+                _UI__WEBPACK_IMPORTED_MODULE_3__.content.appendChild(newTask);
+                newTask.className = 'new-task-btn';
+                newTask.id = project.id;
+                tempID = newTask.id;
                 newTask.textContent = '+ New Task';
                 newTask.addEventListener('click', displayTaskModal);
             }
@@ -21019,35 +21075,47 @@ function renderAll() {
 renderAll();
 
 (function displayProjModal() {
-    _UI__WEBPACK_IMPORTED_MODULE_2__.newProjBtn.addEventListener('click', () => {
-        _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'flex';
+    _UI__WEBPACK_IMPORTED_MODULE_3__.newProjBtn.addEventListener('click', () => {
+        _UI__WEBPACK_IMPORTED_MODULE_3__.projModal.style.display = 'flex';
     })
 })();
 
 function displayTaskModal() {
-    console.log('MODAL!');
-    _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalCnt.style.display = 'flex';
+    _UI__WEBPACK_IMPORTED_MODULE_3__.taskModalCnt.style.display = 'flex';
 }
 
 function addProj() {
-    _UI__WEBPACK_IMPORTED_MODULE_2__.projFormBtn.addEventListener('click', function(event) {
+    _UI__WEBPACK_IMPORTED_MODULE_3__.projFormBtn.addEventListener('click', function(event) {
         event.preventDefault();
         (0,_projects__WEBPACK_IMPORTED_MODULE_1__.addProject)();
         console.log(_projects__WEBPACK_IMPORTED_MODULE_1__.projectsList);
-        //projUL.innerHTML = '';
-        _UI__WEBPACK_IMPORTED_MODULE_2__.projectInput.value = '';
-        _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
+        _UI__WEBPACK_IMPORTED_MODULE_3__.projectInput.value = '';
+        _UI__WEBPACK_IMPORTED_MODULE_3__.projModal.style.display = 'none';
         renderAll();
     })
 }
 addProj();
 
+function addNewTask() {
+    _UI__WEBPACK_IMPORTED_MODULE_3__.subTaskBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        (0,_addTask__WEBPACK_IMPORTED_MODULE_2__.addTask)();
+    })
+}
+addNewTask();
+
+console.log(_projects__WEBPACK_IMPORTED_MODULE_1__.projectsList);
+//console.log(tempID);
+
 function closeProjModal() {
-    _UI__WEBPACK_IMPORTED_MODULE_2__.closeBtn.addEventListener('click', () => {
-        _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_3__.closeBtn.addEventListener('click', () => {
+        _UI__WEBPACK_IMPORTED_MODULE_3__.projModal.style.display = 'none';
     })
 }
 closeProjModal();
+
+
+
 
 /***/ }),
 
@@ -21104,15 +21172,17 @@ function addProject() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "addTask": () => (/* binding */ addTask),
+/* harmony export */   "Todo": () => (/* binding */ Todo),
 /* harmony export */   "defaultTodo": () => (/* binding */ defaultTodo),
-/* harmony export */   "formattedDate": () => (/* binding */ formattedDate),
-/* harmony export */   "newTodo": () => (/* binding */ newTodo)
+/* harmony export */   "formattedDate": () => (/* binding */ formattedDate)
 /* harmony export */ });
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/format/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/format/index.js");
+/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./projects */ "./src/projects.js");
 
 
-//import { projectsList } from './projects.js';
+//import { titleInput, descriptionInput, dueDateInput, priorityInput } from './UI'
+
+// import { tempID } from './C';
 
 class Todo {
     constructor(title, description, dueDate, priority, completed, id) {
@@ -21125,12 +21195,11 @@ class Todo {
     }
 }
 let date = new Date();
-let formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(date, "Pp")
+let formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_1__["default"])(date, "Pp")
 let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false);
 
 
-let newTodo;
-function addTask() {
+/* function addTask() {
     const title = titleInput.value;
     const description = descriptionInput.value;
     const dueDate = dueDateInput.value;
@@ -21138,10 +21207,10 @@ function addTask() {
     const completed = false;
     const id = Date.now();
 
-    newTodo = new Todo(title, description, dueDate, priority, completed, id);
+    const newTodo = new Todo(title, description, dueDate, priority, completed, id);
     console.log(newTodo);
-    return newTodo;
-}
+    console.log(projectsList);
+} */
 
 
 

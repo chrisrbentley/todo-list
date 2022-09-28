@@ -1,31 +1,27 @@
-import { defaultTodo } from './todo.js';
-import { projFormBtn } from './UI.js';
-import { projectInput } from './UI.js';
-import { renderProjects } from './UI.js';
-
-
-
+import { defaultTodo, defaultTodo2 } from './todo.js';
+import { projectInput } from './UI';
 let projectsList = [];
 
 class Project {
-    constructor(title, todos) {
+    constructor(title, todos, id) {
         this.title = title;
         this.todos = todos;
+        this.id = id;
     }
 }
 
-let reminders = new Project('Reminders', []);
+let reminders = new Project('Reminders', [], Date.now());
 projectsList.push(reminders);
-
 reminders.todos.push(defaultTodo);
 console.log(projectsList);
 
-export function addProject() {
+function addProject() {
     const title = projectInput.value;
-    const project = new Project(title, []);
-    projectsList.push(project);
+    const todos = [];
+    const id = Date.now();
+    const newProject = new Project(title, todos, id);
+    projectsList.push(newProject);
     console.log(projectsList);
-    renderProjects();
 };
 
-export { projectsList };
+export { projectsList, addProject };

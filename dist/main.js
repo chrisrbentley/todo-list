@@ -20732,6 +20732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "projUL": () => (/* binding */ projUL),
 /* harmony export */   "projectInput": () => (/* binding */ projectInput),
 /* harmony export */   "subTaskBtn": () => (/* binding */ subTaskBtn),
+/* harmony export */   "taskModalBtn": () => (/* binding */ taskModalBtn),
 /* harmony export */   "taskModalCnt": () => (/* binding */ taskModalCnt),
 /* harmony export */   "titleInput": () => (/* binding */ titleInput)
 /* harmony export */ });
@@ -21001,6 +21002,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 let tempID;
 function renderAll() {
     _UI__WEBPACK_IMPORTED_MODULE_3__.projUL.innerHTML = '';
@@ -21016,6 +21019,7 @@ function renderAll() {
             let filteredList = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsList.filter(function(fList) {
                 return fList.id == project.id;
             })
+            console.log(filteredList)
             if (filteredList[0].todos.length > 0) {
                 _UI__WEBPACK_IMPORTED_MODULE_3__.content.innerHTML = '';
                 for (let i = 0; i < filteredList[0].todos.length; i++) {
@@ -21045,7 +21049,6 @@ function renderAll() {
                     _UI__WEBPACK_IMPORTED_MODULE_3__.content.appendChild(newTask);
                     newTask.id = project.id;
                     tempID = newTask.id;
-                    //console.log(tempID);
                     newTask.className = 'new-task-btn';
                     newTask.textContent = '+ New Task';
                     newTask.addEventListener('click', displayTaskModal);
@@ -21100,6 +21103,12 @@ function addNewTask() {
     _UI__WEBPACK_IMPORTED_MODULE_3__.subTaskBtn.addEventListener('click', function(event) {
         event.preventDefault();
         (0,_addTask__WEBPACK_IMPORTED_MODULE_2__.addTask)();
+        _UI__WEBPACK_IMPORTED_MODULE_3__.titleInput.value = '';
+        _UI__WEBPACK_IMPORTED_MODULE_3__.descriptionInput.value = '';
+        _UI__WEBPACK_IMPORTED_MODULE_3__.dueDateInput.value = '';
+        _UI__WEBPACK_IMPORTED_MODULE_3__.priorityInput.value = '';
+        _UI__WEBPACK_IMPORTED_MODULE_3__.taskModalCnt.style.display = 'none';
+        renderAll();
     })
 }
 addNewTask();
@@ -21113,6 +21122,13 @@ function closeProjModal() {
     })
 }
 closeProjModal();
+
+function closeTaskModal() {
+    _UI__WEBPACK_IMPORTED_MODULE_3__.taskModalBtn.addEventListener('click', () => {
+        _UI__WEBPACK_IMPORTED_MODULE_3__.taskModalCnt.style.display = 'none';
+    })
+}
+closeTaskModal();
 
 
 

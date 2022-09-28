@@ -1,7 +1,9 @@
 import { add } from 'lodash';
 import { projectsList, addProject } from './projects';
 import { addTask } from './addTask';
-import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt, subTaskBtn } from './UI';
+import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt, taskModalBtn, subTaskBtn } from './UI';
+import { titleInput, descriptionInput, dueDateInput, priorityInput } from './UI'
+
 
 
 let tempID;
@@ -19,6 +21,7 @@ function renderAll() {
             let filteredList = projectsList.filter(function(fList) {
                 return fList.id == project.id;
             })
+            console.log(filteredList)
             if (filteredList[0].todos.length > 0) {
                 content.innerHTML = '';
                 for (let i = 0; i < filteredList[0].todos.length; i++) {
@@ -48,7 +51,6 @@ function renderAll() {
                     content.appendChild(newTask);
                     newTask.id = project.id;
                     tempID = newTask.id;
-                    //console.log(tempID);
                     newTask.className = 'new-task-btn';
                     newTask.textContent = '+ New Task';
                     newTask.addEventListener('click', displayTaskModal);
@@ -103,6 +105,12 @@ function addNewTask() {
     subTaskBtn.addEventListener('click', function(event) {
         event.preventDefault();
         addTask();
+        titleInput.value = '';
+        descriptionInput.value = '';
+        dueDateInput.value = '';
+        priorityInput.value = '';
+        taskModalCnt.style.display = 'none';
+        renderAll();
     })
 }
 addNewTask();
@@ -116,6 +124,13 @@ function closeProjModal() {
     })
 }
 closeProjModal();
+
+function closeTaskModal() {
+    taskModalBtn.addEventListener('click', () => {
+        taskModalCnt.style.display = 'none';
+    })
+}
+closeTaskModal();
 
 
 export { tempID };

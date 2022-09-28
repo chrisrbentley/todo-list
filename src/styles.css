@@ -78,7 +78,7 @@ nav {
 #proj-modal-cnt {
     height: 25vh;
     width: 25vw;
-    background-color: green;
+    background-color: #f4efef;
     position: fixed;
     top: 25rem;
     left: 45rem;
@@ -95,7 +95,7 @@ nav {
 }
 
 #proj-form-container {
-    background-color: yellow;
+    background-color: #e6e3e3;
     height: 20vh;
     width: 25vw;
 }
@@ -115,6 +115,7 @@ nav {
     left: 34rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px #9c9898;
 }
 
 #task-modal-top {
@@ -152,16 +153,17 @@ nav {
 }
 
 #task-modal-bottom {
-    background-color: limegreen;
+    background-color: #e6e3e3;
     height: 22rem;
     width: 40rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: solid 3px black; */
 }
 
 #task-fieldset {
-    border: solid 3px black;
+    /* border: solid 3px black; */
     height: 18rem;
     width: 35rem;
 }
@@ -212,7 +214,7 @@ nav {
     left: 100px;
 }
 
-#new-task-btn {
+.new-task-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +222,9 @@ nav {
     width: 6rem;
     background-color: hotpink;
     border-radius: 15px;
+    cursor: pointer;
 }
+
 
 #new-task-btn:hover {
     cursor: pointer;

@@ -1,7 +1,10 @@
 import { add } from 'lodash';
 import { projectsList, addProject } from './projects';
-import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt } from './UI';
+import { addTask } from './addTask';
+import { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt, subTaskBtn } from './UI';
 
+
+let tempID;
 function renderAll() {
     projUL.innerHTML = '';
     for (let i = 0; i < projectsList.length; i++) {
@@ -43,7 +46,10 @@ function renderAll() {
                 }
                     const newTask = document.createElement('btn');
                     content.appendChild(newTask);
-                    newTask.id = 'new-task-btn';
+                    newTask.id = project.id;
+                    tempID = newTask.id;
+                    //console.log(tempID);
+                    newTask.className = 'new-task-btn';
                     newTask.textContent = '+ New Task';
                     newTask.addEventListener('click', displayTaskModal);
             } else {
@@ -60,7 +66,9 @@ function renderAll() {
 
                 const newTask = document.createElement('btn');
                 content.appendChild(newTask);
-                newTask.id = 'new-task-btn';
+                newTask.className = 'new-task-btn';
+                newTask.id = project.id;
+                tempID = newTask.id;
                 newTask.textContent = '+ New Task';
                 newTask.addEventListener('click', displayTaskModal);
             }
@@ -76,7 +84,6 @@ renderAll();
 })();
 
 function displayTaskModal() {
-    console.log('MODAL!');
     taskModalCnt.style.display = 'flex';
 }
 
@@ -85,7 +92,6 @@ function addProj() {
         event.preventDefault();
         addProject();
         console.log(projectsList);
-        //projUL.innerHTML = '';
         projectInput.value = '';
         projModal.style.display = 'none';
         renderAll();
@@ -93,9 +99,23 @@ function addProj() {
 }
 addProj();
 
+function addNewTask() {
+    subTaskBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        addTask();
+    })
+}
+addNewTask();
+
+console.log(projectsList);
+//console.log(tempID);
+
 function closeProjModal() {
     closeBtn.addEventListener('click', () => {
         projModal.style.display = 'none';
     })
 }
 closeProjModal();
+
+
+export { tempID };

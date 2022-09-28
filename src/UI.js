@@ -1,6 +1,6 @@
 import { head } from "lodash";
 import { projectsList, formattedDate } from "./projects";
-import { addTask, newTodo } from "./todo";
+import { addTask } from "./todo";
 
 //basic skeleton
 const body = document.getElementById('body');
@@ -91,14 +91,8 @@ fieldset.appendChild(projFormBtn);
 
 projModal.style.display = 'none';
 
-
-
-
 //////
 
-
-
-console.log('444');
 const taskModalCnt = document.createElement('div');
 const taskModalTop = document.createElement('div');
 const taskModalBtm = document.createElement('div');
@@ -195,4 +189,4 @@ taskFieldset.appendChild(subTaskBtn);
 taskModalCnt.style.display = 'none';
 
 
-export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt };
+export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt, subTaskBtn, titleInput, descriptionInput, dueDateInput, priorityInput };

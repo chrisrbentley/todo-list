@@ -1,6 +1,8 @@
 import { addDays, format } from "date-fns";
 import parseISO from "date-fns/parseISO";
-//import { projectsList } from './projects.js';
+//import { titleInput, descriptionInput, dueDateInput, priorityInput } from './UI'
+import { projectsList } from './projects';
+// import { tempID } from './C';
 
 class Todo {
     constructor(title, description, dueDate, priority, completed, id) {
@@ -17,8 +19,7 @@ let formattedDate = format(date, "Pp")
 let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false);
 
 
-let newTodo;
-function addTask() {
+/* function addTask() {
     const title = titleInput.value;
     const description = descriptionInput.value;
     const dueDate = dueDateInput.value;
@@ -26,9 +27,9 @@ function addTask() {
     const completed = false;
     const id = Date.now();
 
-    newTodo = new Todo(title, description, dueDate, priority, completed, id);
+    const newTodo = new Todo(title, description, dueDate, priority, completed, id);
     console.log(newTodo);
-    return newTodo;
-}
+    console.log(projectsList);
+} */
 
-export { defaultTodo, formattedDate, newTodo, addTask };
+export { defaultTodo, formattedDate, Todo };

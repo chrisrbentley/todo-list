@@ -1,4 +1,4 @@
-import { defaultTodo, defaultTodo2 } from './todo.js';
+import { defaultTodo } from './todo.js';
 import { projectInput } from './UI';
 let projectsList = [];
 

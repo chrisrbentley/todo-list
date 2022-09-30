@@ -7,6 +7,8 @@ import { titleInput, descriptionInput, dueDateInput, priorityInput } from './UI'
 
 
 let tempID;
+let trash;
+let tempTaskID;
 function renderAll() {
     projUL.innerHTML = '';
     for (let i = 0; i < projectsList.length; i++) {
@@ -31,21 +33,29 @@ function renderAll() {
                     const taskDetails = document.createElement('div');
                     const detailsButton = document.createElement('button');
                     const taskDate = document.createElement('div');
+                    trash = document.createElement('img');
 
                     content.appendChild(task);
                     task.appendChild(taskName);
                     task.appendChild(taskDetails);
                     taskDetails.appendChild(detailsButton);
                     task.appendChild(taskDate);
+                    task.appendChild(trash);
 
                     task.className = 'task';
                     taskName.classList.add('task-item', 'task-name');
                     taskDetails.classList.add('task-item', 'task-details');
+                    detailsButton.id = project.id;
                     taskDate.classList.add('task-item', 'task-date');
+                    trash.src = "/src/img/trash-icon.svg";
+                    trash.id = 'delete';
+                    trash.className = filteredList[0].todos[i].id;
+                    tempTaskID = trash.className;
 
                     taskName.textContent = filteredList[0].todos[i].title;
                     detailsButton.textContent = 'Details';
                     taskDate.textContent = filteredList[0].todos[i].dueDate;
+                    deleteTask();
                 }
                     const newTask = document.createElement('btn');
                     content.appendChild(newTask);
@@ -132,5 +142,23 @@ function closeTaskModal() {
 }
 closeTaskModal();
 
+function deleteTask() {
+    trash.addEventListener('click', (e) => {
+        console.log('trash!');
+        const projIndex = projectsList.findIndex(object => {
+            return object.id == tempID;
+        })
+        console.log(projIndex);
 
-export { tempID };
+        let elementClass = e.target.className;
+        const index = projectsList[projIndex].todos.findIndex(object => {
+            return object.id == elementClass;
+        })
+        console.log(index);
+
+        projectsList[projIndex].todos.splice(index, 1);
+        console.log(projectsList);
+    })
+}
+
+export { tempID, trash };

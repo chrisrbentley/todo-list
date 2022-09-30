@@ -16,20 +16,6 @@ class Todo {
 }
 let date = new Date();
 let formattedDate = format(date, "Pp")
-let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false);
-
-
-/* function addTask() {
-    const title = titleInput.value;
-    const description = descriptionInput.value;
-    const dueDate = dueDateInput.value;
-    const priority = priorityInput.value;
-    const completed = false;
-    const id = Date.now();
-
-    const newTodo = new Todo(title, description, dueDate, priority, completed, id);
-    console.log(newTodo);
-    console.log(projectsList);
-} */
+let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false, Date.now());
 
 export { defaultTodo, formattedDate, Todo };

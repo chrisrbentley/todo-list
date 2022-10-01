@@ -154,7 +154,6 @@ taskFieldset.appendChild(dueDateInput);
 const priorityLabel = document.createElement('label');
 const priorityInput = document.createElement('select');
 priorityLabel.setAttribute("for", "priority");
-//priorityInput.setAttribute("type", "date");
 priorityInput.setAttribute("name", "priority");
 priorityLabel.textContent = 'Priority:'
 
@@ -189,4 +188,4 @@ taskFieldset.appendChild(subTaskBtn);
 taskModalCnt.style.display = 'none';
 
 
-export { newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt, taskModalBtn, subTaskBtn, titleInput, descriptionInput, dueDateInput, priorityInput };
+export { main, header, newProjBtn, projUL, projModal, projFormBtn, projectInput, closeBtn, content, taskModalCnt, taskModalBtn, subTaskBtn, titleInput, descriptionInput, dueDateInput, priorityInput };

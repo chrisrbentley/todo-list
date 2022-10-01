@@ -16,6 +16,6 @@ class Todo {
 }
 let date = new Date();
 let formattedDate = format(date, "Pp")
-let defaultTodo = new Todo('Do some coding', 'Do some coding on The Odin Project', formattedDate, 'high', false, Date.now());
+let defaultTodo = new Todo('Get a haircut', 'Get a haircut before my job interview', formattedDate, 'high', false, Date.now());
 
 export { defaultTodo, formattedDate, Todo };

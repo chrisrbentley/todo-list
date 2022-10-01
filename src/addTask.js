@@ -21,7 +21,6 @@ function addTask() {
     })
     console.log(index);
     projectsList[index].todos.push(newTodo);
-
 }
 
 export { addTask };

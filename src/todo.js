@@ -12,6 +12,13 @@ class Todo {
 }
 const date = new Date();
 const formattedDate = format(date, 'Pp');
-const defaultTodo = new Todo('Get a haircut', 'Get a haircut before my job interview', formattedDate, 'high', false, Date.now());
+const defaultTodo = new Todo(
+  'Get a haircut',
+  'Get a haircut before my job interview',
+  formattedDate,
+  'high',
+  false,
+  Date.now(),
+);
 
 export { defaultTodo, formattedDate, Todo };

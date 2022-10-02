@@ -1,287 +1,286 @@
 html {
-    /* To make use of full height of page*/
-    min-height: 100%;
-    margin: 0;
+  /* To make use of full height of page*/
+  min-height: 100%;
+  margin: 0;
 }
 body {
-    min-height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: #f4efef;
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4efef;
 }
 
 header {
-    background-color: red;
+  background-color: red;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 nav {
-    /* height: 55.8rem;
+  /* height: 55.8rem;
     width: 20rem; */
-    display: flex;
-    flex-direction: column;
-    height: 91.8vh;
-    width: 20vw;
-    background-color: #e6e3e3
+  display: flex;
+  flex-direction: column;
+  height: 91.8vh;
+  width: 20vw;
+  background-color: #e6e3e3;
 }
 
 #nav-top {
-    height: 25vh;
-    width: 20vw;
-    /* border: solid 3px black; */
+  height: 25vh;
+  width: 20vw;
+  /* border: solid 3px black; */
 }
 
 #nav-bottom {
-    height: 75vh;
-    width: 20vw;
-    /* border: solid 3px black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 75vh;
+  width: 20vw;
+  /* border: solid 3px black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #projects-container {
-    width: 20vw;
+  width: 20vw;
 }
 
 #projects-container > ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 }
 
 .project {
-    height: 2rem;
-    display: flex;
-    justify-content: center;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .project:hover {
-   cursor: pointer; 
-   background-color: #f4efef;
+  cursor: pointer;
+  background-color: #f4efef;
 }
 
 #add-project-btn {
-    height: 2rem;
-    width: 6rem;
+  height: 2rem;
+  width: 6rem;
 }
 
 #add-project-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #proj-modal-cnt {
-    height: 25vh;
-    width: 25vw;
-    background-color: #f4efef;
-    position: fixed;
-    top: 25rem;
-    left: 45rem;
-    /* display: flex; */
-    flex-direction: column;
+  height: 25vh;
+  width: 25vw;
+  background-color: #f4efef;
+  position: fixed;
+  top: 25rem;
+  left: 45rem;
+  /* display: flex; */
+  flex-direction: column;
 }
 
 #proj-modal-top {
-    background-color: red;
+  background-color: red;
 }
 
 #proj-modal-header {
-    background-color: red;
+  background-color: red;
 }
 
 #proj-form-container {
-    background-color: #e6e3e3;
-    height: 20vh;
-    width: 25vw;
+  background-color: #e6e3e3;
+  height: 20vh;
+  width: 25vw;
 }
 
 #proj-form-container > form > fieldset {
-    display: flex;
-    flex-direction: column;
-    height: 18vh;
+  display: flex;
+  flex-direction: column;
+  height: 18vh;
 }
 
 #task-modal-container {
-    background-color: orange;
-    position: fixed;
-    height: 25rem;
-    width: 40rem;
-    top: 15rem;
-    left: 34rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 5px 5px #9c9898;
+  background-color: orange;
+  position: fixed;
+  height: 25rem;
+  width: 40rem;
+  top: 15rem;
+  left: 34rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px #9c9898;
 }
 
 #task-modal-top {
-    background-color: pink;
-    margin-top: 0;
-    height: 3rem;
-    width: 40rem;
-    display: flex;
-    flex-direction: row;
+  background-color: pink;
+  margin-top: 0;
+  height: 3rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: row;
 }
 
 #task-modal-header {
-    background-color: red;
-    height: 3rem;
-    width: 37rem;
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
+  background-color: red;
+  height: 3rem;
+  width: 37rem;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 
 #task-modal-button {
-    background-color: black;
-    height: 3rem;
-    width: 3rem;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+  background-color: black;
+  height: 3rem;
+  width: 3rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 #task-modal-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #task-modal-bottom {
-    background-color: #e6e3e3;
-    height: 22rem;
-    width: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid 3px black; */
+  background-color: #e6e3e3;
+  height: 22rem;
+  width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 3px black; */
 }
 
 #task-fieldset {
-    /* border: solid 3px black; */
-    height: 18rem;
-    width: 35rem;
+  /* border: solid 3px black; */
+  height: 18rem;
+  width: 35rem;
 }
 
-
-
 #content {
-    width: 100rem;
-    display: flex;
-    flex-direction: column;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .task {
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    height: 5vh;
-    width: 75vw;
-    background-color: #e6e3e3;
-    margin: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  height: 5vh;
+  width: 75vw;
+  background-color: #e6e3e3;
+  margin: 10px;
 }
 
 .task-item {
-    display: flex;
+  display: flex;
 }
 
 .task-name {
-    width: 40vw;
-    align-items: center;
-    font-size: 24px;
-    position: relative;
-    left: 100px;
+  width: 40vw;
+  align-items: center;
+  font-size: 24px;
+  position: relative;
+  left: 100px;
 }
 
 .task-details {
-    width: 10vw;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 100px;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 100px;
 }
 
 .details {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .task-date {
-    width: 9vw;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 100px;
+  width: 9vw;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 100px;
 }
 
 #delete {
-    position: relative;
-    left: 150px;
-    cursor: pointer;
+  position: relative;
+  left: 150px;
+  cursor: pointer;
 }
 
 .new-task-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    width: 6rem;
-    background-color: hotpink;
-    border-radius: 15px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 6rem;
+  background-color: hotpink;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
-
 #new-task-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #empty-project {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .details-container {
-    position: fixed;
-    left: 450px;
-    top: 300px;
-    height: 15rem;
-    width: 50rem;
-    background-color: #e6e3e3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    border-radius: 10px;
-    box-shadow: 5px 5px #aba8a8;
+  position: fixed;
+  left: 450px;
+  top: 300px;
+  height: 15rem;
+  width: 50rem;
+  background-color: #e6e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 5px 5px #aba8a8;
 }
 
 .details-container > button {
-    position: relative;
-    bottom: 105px;
-    left: 700px;
-    background-color: #e6e3e3;
-    cursor: pointer;
-    border: none;
-    font-size: 24px;
+  position: relative;
+  bottom: 105px;
+  left: 700px;
+  background-color: #e6e3e3;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
 }
 
 .details-content {
-    height: 75%;
-    width: 80%;
-    background-color: #e6e3e3;
+  height: 75%;
+  width: 80%;
+  background-color: #e6e3e3;
 }
 
 #details-title {
-    height: 60px;
-    font-size: 30px;
-    line-height: 60px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 60px;
 }
 
-#details-description, #details-date, #details-priority {
-    height:30px;
-    font-size: 20px;
+#details-description,
+#details-date,
+#details-priority {
+  height: 30px;
+  font-size: 20px;
 }

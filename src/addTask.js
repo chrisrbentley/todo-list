@@ -1,6 +1,9 @@
 import { Todo } from './todo';
 import {
-  titleInput, descriptionInput, dueDateInput, priorityInput,
+  titleInput,
+  descriptionInput,
+  dueDateInput,
+  priorityInput,
 } from './UI';
 // eslint-disable-next-line import/no-cycle
 import { tempID } from './domController';
@@ -14,7 +17,14 @@ function addTask() {
   const completed = false;
   const id = Date.now();
 
-  const newTodo = new Todo(title, description, dueDate, priority, completed, id);
+  const newTodo = new Todo(
+    title,
+    description,
+    dueDate,
+    priority,
+    completed,
+    id,
+  );
   // eslint-disable-next-line eqeqeq
   const index = projectsList.findIndex((object) => object.id == tempID);
   projectsList[index].todos.push(newTodo);

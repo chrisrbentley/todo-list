@@ -1,3 +1,4 @@
+/* eslint-disable wrap-iife */
 /* eslint-disable no-shadow */
 /* eslint-disable eqeqeq */
 /* eslint-disable import/no-mutable-exports */
@@ -8,9 +9,23 @@ import { projectsList, addProject } from './projects';
 // eslint-disable-next-line import/no-cycle
 import { addTask } from './addTask';
 import {
-  body, main, header, newProjBtn, projUL, projModal, projFormBtn, projectInput,
-  closeBtn, content, taskModalCnt, taskModalBtn, subTaskBtn, titleInput,
-  descriptionInput, dueDateInput, priorityInput,
+  body,
+  main,
+  header,
+  newProjBtn,
+  projUL,
+  projModal,
+  projFormBtn,
+  projectInput,
+  closeBtn,
+  content,
+  taskModalCnt,
+  taskModalBtn,
+  subTaskBtn,
+  titleInput,
+  descriptionInput,
+  dueDateInput,
+  priorityInput,
 } from './UI';
 
 let tempID;
@@ -26,7 +41,9 @@ function renderAll() {
     projUL.appendChild(project);
 
     project.addEventListener('click', () => {
-      const filteredList = projectsList.filter((fList) => fList.id == project.id);
+      const filteredList = projectsList.filter(
+        (fList) => fList.id == project.id,
+      );
       if (filteredList[0].todos.length > 0) {
         content.innerHTML = '';
         for (let i = 0; i < filteredList[0].todos.length; i++) {
@@ -133,7 +150,7 @@ renderAll();
   newProjBtn.addEventListener('click', () => {
     projModal.style.display = 'flex';
   });
-}());
+})();
 
 function displayTaskModal() {
   taskModalCnt.style.display = 'flex';
@@ -184,7 +201,9 @@ function deleteTask() {
     const projIndex = projectsList.findIndex((object) => object.id == tempID);
 
     const elementClass = e.target.className;
-    const index = projectsList[projIndex].todos.findIndex((object) => object.id === elementClass);
+    const index = projectsList[projIndex].todos.findIndex(
+      (object) => object.id === elementClass,
+    );
     // if above breaks try ==
     projectsList[projIndex].todos.splice(index, 1);
   });

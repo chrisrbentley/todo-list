@@ -183,7 +183,21 @@ taskFieldset.appendChild(subTaskBtn);
 taskModalCnt.style.display = 'none';
 
 export {
-  body, main, header, newProjBtn, projUL, projModal, projFormBtn, projectInput,
-  closeBtn, content, taskModalCnt, taskModalBtn, subTaskBtn, titleInput,
-  descriptionInput, dueDateInput, priorityInput,
+  body,
+  main,
+  header,
+  newProjBtn,
+  projUL,
+  projModal,
+  projFormBtn,
+  projectInput,
+  closeBtn,
+  content,
+  taskModalCnt,
+  taskModalBtn,
+  subTaskBtn,
+  titleInput,
+  descriptionInput,
+  dueDateInput,
+  priorityInput,
 };

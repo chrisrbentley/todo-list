@@ -1,27 +1,27 @@
-import { defaultTodo } from './todo.js';
+/* eslint-disable import/no-cycle */
+import { defaultTodo } from './todo';
 import { projectInput } from './UI';
-let projectsList = [];
+
+const projectsList = [];
 
 class Project {
-    constructor(title, todos, id) {
-        this.title = title;
-        this.todos = todos;
-        this.id = id;
-    }
+  constructor(title, todos, id) {
+    this.title = title;
+    this.todos = todos;
+    this.id = id;
+  }
 }
 
-let reminders = new Project('Reminders', [], Date.now());
+const reminders = new Project('Reminders', [], Date.now());
 projectsList.push(reminders);
 reminders.todos.push(defaultTodo);
-console.log(projectsList);
 
 function addProject() {
-    const title = projectInput.value;
-    const todos = [];
-    const id = Date.now();
-    const newProject = new Project(title, todos, id);
-    projectsList.push(newProject);
-    console.log(projectsList);
-};
+  const title = projectInput.value;
+  const todos = [];
+  const id = Date.now();
+  const newProject = new Project(title, todos, id);
+  projectsList.push(newProject);
+}
 
 export { projectsList, addProject };

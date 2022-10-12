@@ -3710,6 +3710,7 @@ function addTask() {
   // eslint-disable-next-line eqeqeq
   const index = _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList.findIndex((object) => object.id == _domController__WEBPACK_IMPORTED_MODULE_2__.tempID);
   _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList[index].todos.push(newTodo);
+  console.log(_projects__WEBPACK_IMPORTED_MODULE_3__.projectsList);
 }
 
 // eslint-disable-next-line import/prefer-default-export
@@ -3744,129 +3745,136 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+let project;
 let tempID;
 let trash;
 
-function renderAll() {
+function renderProjects() {
+  console.log('111');
   _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
   for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.length; i++) {
-    const project = document.createElement('li');
+    project = document.createElement('li');
     project.className = 'project';
     project.id = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[i].id;
     project.textContent = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[i].title;
     _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.appendChild(project);
-
-    project.addEventListener('click', () => {
-      const filteredList = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.filter(
-        (fList) => fList.id == project.id,
-      );
-      if (filteredList[0].todos.length > 0) {
-        _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
-        for (let i = 0; i < filteredList[0].todos.length; i++) {
-          const task = document.createElement('div');
-          const taskName = document.createElement('div');
-          const taskDetails = document.createElement('div');
-          const detailsButton = document.createElement('button');
-          const taskDate = document.createElement('div');
-          trash = document.createElement('img');
-
-          _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(task);
-          task.appendChild(taskName);
-          task.appendChild(taskDetails);
-          taskDetails.appendChild(detailsButton);
-          task.appendChild(taskDate);
-          task.appendChild(trash);
-
-          task.className = 'task';
-          taskName.classList.add('task-item', 'task-name');
-          taskDetails.classList.add('task-item', 'task-details');
-          detailsButton.id = project.id;
-          detailsButton.className = 'details';
-          taskDate.classList.add('task-item', 'task-date');
-          trash.src = '/src/img/trash-icon.svg';
-          trash.id = 'delete';
-          trash.className = filteredList[0].todos[i].id;
-
-          taskName.textContent = filteredList[0].todos[i].title;
-          detailsButton.textContent = 'Details';
-          taskDate.textContent = filteredList[0].todos[i].dueDate;
-          detailsButton.addEventListener('click', () => {
-            const detailsContainer = document.createElement('div');
-            const closeDetails = document.createElement('button');
-            const detailsContent = document.createElement('div');
-            const detailsTitle = document.createElement('div');
-            const detailsDescription = document.createElement('div');
-            const detailsDate = document.createElement('div');
-            const detailsPriority = document.createElement('div');
-
-            detailsContainer.className = 'details-container';
-            detailsContent.className = 'details-content';
-            detailsTitle.id = 'details-title';
-            detailsDescription.id = 'details-description';
-            detailsDate.id = 'details-date';
-            detailsPriority.id = 'details-priority';
-
-            closeDetails.textContent = 'X';
-            detailsTitle.textContent = filteredList[0].todos[i].title;
-            detailsDescription.textContent = `Description: ${filteredList[0].todos[i].description}`;
-            detailsDate.textContent = `Due Date: ${filteredList[0].todos[i].dueDate}`;
-            detailsPriority.textContent = `Priority: ${filteredList[0].todos[i].priority}`;
-
-            _UI__WEBPACK_IMPORTED_MODULE_2__.body.appendChild(detailsContainer);
-            detailsContainer.appendChild(closeDetails);
-            detailsContainer.appendChild(detailsContent);
-            detailsContent.appendChild(detailsTitle);
-            detailsContent.appendChild(detailsDescription);
-            detailsContent.appendChild(detailsDate);
-            detailsContent.appendChild(detailsPriority);
-            _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'blur(4px)';
-            _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'blur(4px)';
-
-            closeDetails.addEventListener('click', () => {
-              detailsContainer.remove();
-              _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'none';
-              _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'none';
-            });
-          });
-          deleteTask();
-        }
-        const newTask = document.createElement('btn');
-        _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
-        newTask.id = project.id;
-        tempID = newTask.id;
-        newTask.className = 'new-task-btn';
-        newTask.textContent = '+ New Task';
-        newTask.addEventListener('click', displayTaskModal);
-      } else {
-        _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
-        const emptyProjCnt = document.createElement('div');
-        const emptyProjP = document.createElement('p');
-        emptyProjP.textContent = 'This project is empty.';
-
-        emptyProjP.id = 'empty-project';
-
-        _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(emptyProjCnt);
-        emptyProjCnt.appendChild(emptyProjP);
-
-        const newTask = document.createElement('btn');
-        _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
-        newTask.className = 'new-task-btn';
-        newTask.id = project.id;
-        tempID = newTask.id;
-        newTask.textContent = '+ New Task';
-        // eslint-disable-next-line no-use-before-define
-        newTask.addEventListener('click', displayTaskModal);
-      }
-    });
+    renderTasks();
   }
 }
-renderAll();
+renderProjects();
 
-(function displayProjModal() {
+function renderTasks() {
+  project.addEventListener('click', (e) => {
+    const projID = e.target.id;
+    console.log(projID);
+    const indexNum = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.findIndex((object) => object.id == projID);
+    console.log(indexNum);
+    console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos);
+    if (_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos.length > 0) {
+      _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+      for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos.length; i++) {
+        const task = document.createElement('div');
+        const taskName = document.createElement('div');
+        const taskDetails = document.createElement('div');
+        const detailsButton = document.createElement('button');
+        const taskDate = document.createElement('div');
+        trash = document.createElement('img');
+        _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(task);
+        task.appendChild(taskName);
+        task.appendChild(taskDetails);
+        taskDetails.appendChild(detailsButton);
+        task.appendChild(taskDate);
+        task.appendChild(trash);
+
+        task.className = 'task';
+        taskName.classList.add('task-item', 'task-name');
+        taskDetails.classList.add('task-item', 'task-details');
+        detailsButton.id = project.id;
+        detailsButton.className = 'details';
+        taskDate.classList.add('task-item', 'task-date');
+        trash.src = '/src/img/trash-icon.svg';
+        trash.id = 'delete';
+        trash.className = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].id;
+
+        taskName.textContent = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].title;
+        detailsButton.textContent = 'Details';
+        taskDate.textContent = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].dueDate;
+        detailsButton.addEventListener('click', () => {
+          const detailsContainer = document.createElement('div');
+          const closeDetails = document.createElement('button');
+          const detailsContent = document.createElement('div');
+          const detailsTitle = document.createElement('div');
+          const detailsDescription = document.createElement('div');
+          const detailsDate = document.createElement('div');
+          const detailsPriority = document.createElement('div');
+
+          detailsContainer.className = 'details-container';
+          detailsContent.className = 'details-content';
+          detailsTitle.id = 'details-title';
+          detailsDescription.id = 'details-description';
+          detailsDate.id = 'details-date';
+          detailsPriority.id = 'details-priority';
+
+          closeDetails.textContent = 'X';
+          detailsTitle.textContent = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].title;
+          detailsDescription.textContent = `Description: ${_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].description}`;
+          detailsDate.textContent = `Due Date: ${_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].dueDate}`;
+          detailsPriority.textContent = `Priority: ${_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[indexNum].todos[i].priority}`;
+
+          _UI__WEBPACK_IMPORTED_MODULE_2__.body.appendChild(detailsContainer);
+          detailsContainer.appendChild(closeDetails);
+          detailsContainer.appendChild(detailsContent);
+          detailsContent.appendChild(detailsTitle);
+          detailsContent.appendChild(detailsDescription);
+          detailsContent.appendChild(detailsDate);
+          detailsContent.appendChild(detailsPriority);
+          _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'blur(4px)';
+          _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'blur(4px)';
+
+          closeDetails.addEventListener('click', () => {
+            detailsContainer.remove();
+            _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'none';
+            _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'none';
+          });
+        });
+        deleteTask();
+      }
+      const newTask = document.createElement('btn');
+      _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
+      newTask.id = project.id;
+      tempID = newTask.id;
+      newTask.className = 'new-task-btn';
+      newTask.textContent = '+ New Task';
+      newTask.addEventListener('click', displayTaskModal);
+    } else {
+      _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+      const emptyProjCnt = document.createElement('div');
+      const emptyProjP = document.createElement('p');
+      emptyProjP.textContent = 'This project is empty.';
+
+      emptyProjP.id = 'empty-project';
+
+      _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(emptyProjCnt);
+      emptyProjCnt.appendChild(emptyProjP);
+
+      const newTask = document.createElement('btn');
+      _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
+      newTask.className = 'new-task-btn';
+      newTask.id = project.id;
+      tempID = newTask.id;
+      newTask.textContent = '+ New Task';
+      // eslint-disable-next-line no-use-before-define
+      newTask.addEventListener('click', displayTaskModal);
+    }
+  });
+}
+
+function displayProjModal() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.newProjBtn.addEventListener('click', () => {
     _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'flex';
   });
-})();
+}
+displayProjModal();
 
 function displayTaskModal() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalCnt.style.display = 'flex';
@@ -3878,7 +3886,7 @@ function addProj() {
     (0,_projects__WEBPACK_IMPORTED_MODULE_0__.addProject)();
     _UI__WEBPACK_IMPORTED_MODULE_2__.projectInput.value = '';
     _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
-    renderAll();
+    renderProjects();
   });
 }
 addProj();
@@ -3892,7 +3900,7 @@ function addNewTask() {
     _UI__WEBPACK_IMPORTED_MODULE_2__.dueDateInput.value = '';
     _UI__WEBPACK_IMPORTED_MODULE_2__.priorityInput.value = '';
     _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalCnt.style.display = 'none';
-    renderAll();
+    renderTasks();
   });
 }
 addNewTask();
@@ -3915,6 +3923,7 @@ function deleteTask() {
   trash.addEventListener('click', (e) => {
     // eslint-disable-next-line eqeqeq
     const projIndex = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.findIndex((object) => object.id == tempID);
+    console.log(projIndex);
 
     const elementClass = e.target.className;
     const index = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[projIndex].todos.findIndex(
@@ -3922,6 +3931,9 @@ function deleteTask() {
     );
     // if above breaks try ==
     _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[projIndex].todos.splice(index, 1);
+    console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
+    // renderAll();
+    renderTasks();
   });
 }
 
@@ -3967,6 +3979,7 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
+  console.log(projectsList);
 }
 
 

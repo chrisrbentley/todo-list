@@ -6,7 +6,7 @@ import {
   priorityInput,
 } from './UI';
 // eslint-disable-next-line import/no-cycle
-import { tempID } from './domController';
+import { currentProj } from './domController';
 import { projectsList } from './projects';
 
 function addTask() {
@@ -26,7 +26,7 @@ function addTask() {
     id,
   );
   // eslint-disable-next-line eqeqeq
-  const index = projectsList.findIndex((object) => object.id == tempID);
+  const index = projectsList.findIndex((object) => object.id == currentProj);
   projectsList[index].todos.push(newTodo);
   console.log(projectsList);
 }

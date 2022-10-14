@@ -3710,7 +3710,6 @@ function addTask() {
   // eslint-disable-next-line eqeqeq
   const index = _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList.findIndex((object) => object.id == _domController__WEBPACK_IMPORTED_MODULE_2__.currentProj);
   _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList[index].todos.push(newTodo);
-  console.log(_projects__WEBPACK_IMPORTED_MODULE_3__.projectsList);
 }
 
 // eslint-disable-next-line import/prefer-default-export
@@ -3766,19 +3765,15 @@ let currentIndex;
 function getCurrentProj() {
   project.addEventListener('click', (e) => {
     currentProj = e.target.id;
-    console.log(currentProj);
     currentIndex = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.findIndex((object) => object.id == currentProj);
-    console.log(currentIndex);
     renderTasks();
   });
 }
 
 function renderTasks() {
-  // console.log(currentIndex);
   if (_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.length > 0) {
     _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
     for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.length; i++) {
-      console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos[i]);
       const task = document.createElement('div');
       const taskName = document.createElement('div');
       const taskDetails = document.createElement('div');
@@ -3851,7 +3846,6 @@ function renderTasks() {
     newTask.addEventListener('click', displayTaskModal);
   } else {
     _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
-    console.log('0');
     _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
     const emptyProjCnt = document.createElement('div');
     const emptyProjP = document.createElement('p');
@@ -3930,9 +3924,7 @@ function deleteTask() {
     );
     // if above breaks try ==
     _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.splice(index, 1);
-    console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
     renderTasks();
-    console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
   });
 }
 
@@ -3978,7 +3970,6 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
-  console.log(projectsList);
 }
 
 
@@ -4012,7 +4003,7 @@ class Todo {
   }
 }
 const date = new Date();
-const formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(date, 'Pp');
+const formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(date, 'P');
 const defaultTodo = new Todo(
   'Get a haircut',
   'Get a haircut before my job interview',

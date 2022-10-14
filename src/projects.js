@@ -22,7 +22,6 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
-  console.log(projectsList);
 }
 
 export { projectsList, addProject };

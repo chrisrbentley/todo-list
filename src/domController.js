@@ -49,19 +49,15 @@ let currentIndex;
 function getCurrentProj() {
   project.addEventListener('click', (e) => {
     currentProj = e.target.id;
-    console.log(currentProj);
     currentIndex = projectsList.findIndex((object) => object.id == currentProj);
-    console.log(currentIndex);
     renderTasks();
   });
 }
 
 function renderTasks() {
-  // console.log(currentIndex);
   if (projectsList[currentIndex].todos.length > 0) {
     content.innerHTML = '';
     for (let i = 0; i < projectsList[currentIndex].todos.length; i++) {
-      console.log(projectsList[currentIndex].todos[i]);
       const task = document.createElement('div');
       const taskName = document.createElement('div');
       const taskDetails = document.createElement('div');
@@ -134,7 +130,6 @@ function renderTasks() {
     newTask.addEventListener('click', displayTaskModal);
   } else {
     content.innerHTML = '';
-    console.log('0');
     content.innerHTML = '';
     const emptyProjCnt = document.createElement('div');
     const emptyProjP = document.createElement('p');
@@ -213,9 +208,7 @@ function deleteTask() {
     );
     // if above breaks try ==
     projectsList[currentIndex].todos.splice(index, 1);
-    console.log(projectsList);
     renderTasks();
-    console.log(projectsList);
   });
 }
 

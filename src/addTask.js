@@ -1,3 +1,4 @@
+import { format, parseISO } from 'date-fns';
 import { Todo } from './todo';
 import {
   titleInput,
@@ -12,7 +13,9 @@ import { projectsList } from './projects';
 function addTask() {
   const title = titleInput.value;
   const description = descriptionInput.value;
-  const dueDate = dueDateInput.value;
+  // const dueDate = dueDateInput.value;
+  let dueDate = parseISO(dueDateInput.value);
+  dueDate = format(dueDate, 'P');
   const priority = priorityInput.value;
   const completed = false;
   const id = Date.now();

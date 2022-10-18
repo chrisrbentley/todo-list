@@ -3710,6 +3710,7 @@ function addTask() {
   // eslint-disable-next-line eqeqeq
   const index = _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList.findIndex((object) => object.id == _domController__WEBPACK_IMPORTED_MODULE_2__.currentProj);
   _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList[index].todos.push(newTodo);
+  console.log(_projects__WEBPACK_IMPORTED_MODULE_3__.projectsList);
 }
 
 // eslint-disable-next-line import/prefer-default-export
@@ -3920,8 +3921,10 @@ function deleteTask() {
   trash.addEventListener('click', (e) => {
     const elementClass = e.target.className;
     const index = _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.findIndex(
-      (object) => object.id === elementClass,
+      (object) => object.id == elementClass,
     );
+    console.log(index);
+    console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
     // if above breaks try ==
     _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.splice(index, 1);
     renderTasks();

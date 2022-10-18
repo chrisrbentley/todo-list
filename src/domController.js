@@ -204,8 +204,10 @@ function deleteTask() {
   trash.addEventListener('click', (e) => {
     const elementClass = e.target.className;
     const index = projectsList[currentIndex].todos.findIndex(
-      (object) => object.id === elementClass,
+      (object) => object.id == elementClass,
     );
+    console.log(index);
+    console.log(projectsList);
     // if above breaks try ==
     projectsList[currentIndex].todos.splice(index, 1);
     renderTasks();

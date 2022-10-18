@@ -28,6 +28,7 @@ function addTask() {
   // eslint-disable-next-line eqeqeq
   const index = projectsList.findIndex((object) => object.id == currentProj);
   projectsList[index].todos.push(newTodo);
+  console.log(projectsList);
 }
 
 // eslint-disable-next-line import/prefer-default-export

@@ -2,38 +2,39 @@
 const body = document.getElementById('body');
 const header = document.createElement('header');
 const h1 = document.createElement('h1');
+const middle = document.createElement('div');
+const sidebar = document.createElement('div');
 const main = document.createElement('main');
 const nav = document.createElement('nav');
-const content = document.createElement('div');
+const tasks = document.createElement('div');
 
 h1.textContent = 'Todo List';
 
-content.id = 'content';
+tasks.id = 'tasks-container';
+middle.id = 'middle';
+sidebar.id = 'sidebar';
 
 body.appendChild(header);
 header.appendChild(h1);
-body.appendChild(main);
-main.appendChild(nav);
-main.appendChild(content);
+body.appendChild(middle);
+middle.appendChild(sidebar);
+sidebar.appendChild(nav);
+middle.appendChild(main);
+main.appendChild(tasks);
 
 // sidebar content
-const navTop = document.createElement('div');
-const navBottom = document.createElement('div');
 const projectsContainer = document.createElement('div');
 const projUL = document.createElement('ul');
 const newProjBtn = document.createElement('button');
 
-navTop.id = 'nav-top';
-navBottom.id = 'nav-bottom';
 projectsContainer.id = 'projects-container';
 newProjBtn.id = 'add-project-btn';
 
 newProjBtn.textContent = '+ Add Project';
 
-nav.append(navTop, navBottom);
-navBottom.appendChild(projectsContainer);
+nav.appendChild(projectsContainer);
 projectsContainer.appendChild(projUL);
-navBottom.appendChild(newProjBtn);
+nav.appendChild(newProjBtn);
 
 // create project modal
 const projModal = document.createElement('div');
@@ -142,6 +143,7 @@ const dueDateInput = document.createElement('input');
 dueDateLabel.setAttribute('for', 'duedate');
 dueDateInput.setAttribute('type', 'date');
 dueDateInput.setAttribute('name', 'duedate');
+dueDateInput.id = 'due-date';
 dueDateLabel.textContent = 'Due Date:';
 
 taskFieldset.appendChild(dueDateLabel);
@@ -192,7 +194,7 @@ export {
   projFormBtn,
   projectInput,
   closeBtn,
-  content,
+  tasks,
   taskModalCnt,
   taskModalBtn,
   subTaskBtn,
@@ -200,4 +202,5 @@ export {
   descriptionInput,
   dueDateInput,
   priorityInput,
+  sidebar,
 };

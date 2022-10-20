@@ -18,7 +18,7 @@ import {
   projFormBtn,
   projectInput,
   closeBtn,
-  content,
+  tasks,
   taskModalCnt,
   taskModalBtn,
   subTaskBtn,
@@ -26,6 +26,7 @@ import {
   descriptionInput,
   dueDateInput,
   priorityInput,
+  sidebar,
 } from './UI';
 
 let project;
@@ -56,23 +57,30 @@ function getCurrentProj() {
 
 function renderTasks() {
   if (projectsList[currentIndex].todos.length > 0) {
-    content.innerHTML = '';
+    main.innerHTML = '';
+    tasks.innerHTML = '';
+    main.appendChild(tasks);
     for (let i = 0; i < projectsList[currentIndex].todos.length; i++) {
       const task = document.createElement('div');
+      const taskLeft = document.createElement('div');
+      const taskRight = document.createElement('div');
       const taskName = document.createElement('div');
-      const taskDetails = document.createElement('div');
+      // const taskDetails = document.createElement('div');
       const detailsButton = document.createElement('button');
       const taskDate = document.createElement('div');
       trash = document.createElement('img');
-      content.appendChild(task);
-      task.appendChild(taskName);
-      task.appendChild(taskDetails);
-      taskDetails.appendChild(detailsButton);
-      task.appendChild(taskDate);
-      task.appendChild(trash);
+      tasks.appendChild(task);
+      task.appendChild(taskLeft);
+      task.appendChild(taskRight);
+      taskLeft.appendChild(taskName);
+      taskRight.appendChild(detailsButton);
+      taskRight.appendChild(taskDate);
+      taskRight.appendChild(trash);
       task.className = 'task';
+      taskLeft.className = 'task-left';
+      taskRight.className = 'task-right';
       taskName.classList.add('task-item', 'task-name');
-      taskDetails.classList.add('task-item', 'task-details');
+      // taskDetails.classList.add('task-item', 'task-details');
       detailsButton.id = project.id;
       detailsButton.className = 'details';
       taskDate.classList.add('task-item', 'task-date');
@@ -123,25 +131,24 @@ function renderTasks() {
       deleteTask();
     }
     const newTask = document.createElement('btn');
-    content.appendChild(newTask);
+    tasks.appendChild(newTask);
     newTask.id = project.id;
     newTask.className = 'new-task-btn';
     newTask.textContent = '+ New Task';
     newTask.addEventListener('click', displayTaskModal);
   } else {
-    content.innerHTML = '';
-    content.innerHTML = '';
+    main.innerHTML = '';
     const emptyProjCnt = document.createElement('div');
     const emptyProjP = document.createElement('p');
     emptyProjP.textContent = 'This project is empty.';
 
     emptyProjP.id = 'empty-project';
 
-    content.appendChild(emptyProjCnt);
+    main.appendChild(emptyProjCnt);
     emptyProjCnt.appendChild(emptyProjP);
 
     const newTask = document.createElement('btn');
-    content.appendChild(newTask);
+    main.appendChild(newTask);
     newTask.className = 'new-task-btn';
     newTask.id = project.id;
     newTask.textContent = '+ New Task';
@@ -153,12 +160,18 @@ function renderTasks() {
 function displayProjModal() {
   newProjBtn.addEventListener('click', () => {
     projModal.style.display = 'flex';
+    main.style.filter = 'blur(4px)';
+    header.style.filter = 'blur(4px)';
+    sidebar.style.filter = 'blur(4px)';
   });
 }
 displayProjModal();
 
 function displayTaskModal() {
   taskModalCnt.style.display = 'flex';
+  main.style.filter = 'blur(4px)';
+  header.style.filter = 'blur(4px)';
+  sidebar.style.filter = 'blur(4px)';
 }
 
 function addProj() {
@@ -167,6 +180,9 @@ function addProj() {
     addProject();
     projectInput.value = '';
     projModal.style.display = 'none';
+    main.style.filter = 'none';
+    sidebar.style.filter = 'none';
+    header.style.filter = 'none';
     renderProjects();
   });
 }
@@ -181,6 +197,9 @@ function addNewTask() {
     dueDateInput.value = '';
     priorityInput.value = '';
     taskModalCnt.style.display = 'none';
+    main.style.filter = 'none';
+    sidebar.style.filter = 'none';
+    header.style.filter = 'none';
     renderTasks();
   });
 }
@@ -189,6 +208,9 @@ addNewTask();
 function closeProjModal() {
   closeBtn.addEventListener('click', () => {
     projModal.style.display = 'none';
+    main.style.filter = 'none';
+    sidebar.style.filter = 'none';
+    header.style.filter = 'none';
   });
 }
 closeProjModal();
@@ -196,6 +218,9 @@ closeProjModal();
 function closeTaskModal() {
   taskModalBtn.addEventListener('click', () => {
     taskModalCnt.style.display = 'none';
+    main.style.filter = 'none';
+    sidebar.style.filter = 'none';
+    header.style.filter = 'none';
   });
 }
 closeTaskModal();

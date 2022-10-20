@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html {\n  /* To make use of full height of page*/\n  min-height: 100%;\n  margin: 0;\n}\nbody {\n  min-height: 100%;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  background-color: #f4efef;\n}\n\nheader {\n  background-color: red;\n}\n\nmain {\n  display: flex;\n  flex-direction: row;\n}\n\nnav {\n  /* height: 55.8rem;\n    width: 20rem; */\n  display: flex;\n  flex-direction: column;\n  height: 91.8vh;\n  width: 20vw;\n  background-color: #e6e3e3;\n}\n\n#nav-top {\n  height: 25vh;\n  width: 20vw;\n  /* border: solid 3px black; */\n}\n\n#nav-bottom {\n  height: 75vh;\n  width: 20vw;\n  /* border: solid 3px black; */\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#projects-container {\n  width: 20vw;\n}\n\n#projects-container > ul {\n  display: flex;\n  flex-direction: column;\n  list-style: none;\n}\n\n.project {\n  height: 2rem;\n  display: flex;\n  justify-content: center;\n}\n\n.project:hover {\n  cursor: pointer;\n  background-color: #f4efef;\n}\n\n#add-project-btn {\n  height: 2rem;\n  width: 6rem;\n}\n\n#add-project-btn:hover {\n  cursor: pointer;\n}\n\n#proj-modal-cnt {\n  height: 25vh;\n  width: 25vw;\n  background-color: #f4efef;\n  position: fixed;\n  top: 25rem;\n  left: 45rem;\n  /* display: flex; */\n  flex-direction: column;\n}\n\n#proj-modal-top {\n  background-color: red;\n}\n\n#proj-modal-header {\n  background-color: red;\n}\n\n#proj-form-container {\n  background-color: #e6e3e3;\n  height: 20vh;\n  width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n  display: flex;\n  flex-direction: column;\n  height: 18vh;\n}\n\n#task-modal-container {\n  background-color: orange;\n  position: fixed;\n  height: 25rem;\n  width: 40rem;\n  top: 15rem;\n  left: 34rem;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 5px 5px #9c9898;\n}\n\n#task-modal-top {\n  background-color: pink;\n  margin-top: 0;\n  height: 3rem;\n  width: 40rem;\n  display: flex;\n  flex-direction: row;\n}\n\n#task-modal-header {\n  background-color: red;\n  height: 3rem;\n  width: 37rem;\n  margin-top: 0;\n  display: flex;\n  align-items: center;\n  font-size: 2rem;\n}\n\n#task-modal-button {\n  background-color: black;\n  height: 3rem;\n  width: 3rem;\n  background-color: red;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 2rem;\n}\n\n#task-modal-button:hover {\n  cursor: pointer;\n}\n\n#task-modal-bottom {\n  background-color: #e6e3e3;\n  height: 22rem;\n  width: 40rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  /* border: solid 3px black; */\n}\n\n#task-fieldset {\n  /* border: solid 3px black; */\n  height: 18rem;\n  width: 35rem;\n}\n\n#content {\n  width: 100rem;\n  display: flex;\n  flex-direction: column;\n}\n\n.task {\n  display: flex;\n  flex-direction: row;\n  border-radius: 15px;\n  height: 5vh;\n  width: 75vw;\n  background-color: #e6e3e3;\n  margin: 10px;\n}\n\n.task-item {\n  display: flex;\n}\n\n.task-name {\n  width: 40vw;\n  align-items: center;\n  font-size: 24px;\n  position: relative;\n  left: 100px;\n}\n\n.task-details {\n  width: 10vw;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  left: 100px;\n}\n\n.details {\n  cursor: pointer;\n}\n\n.task-date {\n  width: 9vw;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  left: 100px;\n}\n\n#delete {\n  position: relative;\n  left: 150px;\n  cursor: pointer;\n}\n\n.new-task-btn {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 2rem;\n  width: 6rem;\n  background-color: hotpink;\n  border-radius: 15px;\n  cursor: pointer;\n}\n\n#new-task-btn:hover {\n  cursor: pointer;\n}\n\n#empty-project {\n  font-size: 24px;\n}\n\n.details-container {\n  position: fixed;\n  left: 450px;\n  top: 300px;\n  height: 15rem;\n  width: 50rem;\n  background-color: #e6e3e3;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 1;\n  border-radius: 10px;\n  box-shadow: 5px 5px #aba8a8;\n}\n\n.details-container > button {\n  position: relative;\n  bottom: 105px;\n  left: 700px;\n  background-color: #e6e3e3;\n  cursor: pointer;\n  border: none;\n  font-size: 24px;\n}\n\n.details-content {\n  height: 75%;\n  width: 80%;\n  background-color: #e6e3e3;\n}\n\n#details-title {\n  height: 60px;\n  font-size: 30px;\n  line-height: 60px;\n}\n\n#details-description,\n#details-date,\n#details-priority {\n  height: 30px;\n  font-size: 20px;\n}\n", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"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","sourcesContent":["html {\n  /* To make use of full height of page*/\n  min-height: 100%;\n  margin: 0;\n}\nbody {\n  min-height: 100%;\n  margin: 0;\n  display: flex;\n  flex-direction: column;\n  background-color: #f4efef;\n}\n\nheader {\n  background-color: red;\n}\n\nmain {\n  display: flex;\n  flex-direction: row;\n}\n\nnav {\n  /* height: 55.8rem;\n    width: 20rem; */\n  display: flex;\n  flex-direction: column;\n  height: 91.8vh;\n  width: 20vw;\n  background-color: #e6e3e3;\n}\n\n#nav-top {\n  height: 25vh;\n  width: 20vw;\n  /* border: solid 3px black; */\n}\n\n#nav-bottom {\n  height: 75vh;\n  width: 20vw;\n  /* border: solid 3px black; */\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n#projects-container {\n  width: 20vw;\n}\n\n#projects-container > ul {\n  display: flex;\n  flex-direction: column;\n  list-style: none;\n}\n\n.project {\n  height: 2rem;\n  display: flex;\n  justify-content: center;\n}\n\n.project:hover {\n  cursor: pointer;\n  background-color: #f4efef;\n}\n\n#add-project-btn {\n  height: 2rem;\n  width: 6rem;\n}\n\n#add-project-btn:hover {\n  cursor: pointer;\n}\n\n#proj-modal-cnt {\n  height: 25vh;\n  width: 25vw;\n  background-color: #f4efef;\n  position: fixed;\n  top: 25rem;\n  left: 45rem;\n  /* display: flex; */\n  flex-direction: column;\n}\n\n#proj-modal-top {\n  background-color: red;\n}\n\n#proj-modal-header {\n  background-color: red;\n}\n\n#proj-form-container {\n  background-color: #e6e3e3;\n  height: 20vh;\n  width: 25vw;\n}\n\n#proj-form-container > form > fieldset {\n  display: flex;\n  flex-direction: column;\n  height: 18vh;\n}\n\n#task-modal-container {\n  background-color: orange;\n  position: fixed;\n  height: 25rem;\n  width: 40rem;\n  top: 15rem;\n  left: 34rem;\n  display: flex;\n  flex-direction: column;\n  box-shadow: 5px 5px #9c9898;\n}\n\n#task-modal-top {\n  background-color: pink;\n  margin-top: 0;\n  height: 3rem;\n  width: 40rem;\n  display: flex;\n  flex-direction: row;\n}\n\n#task-modal-header {\n  background-color: red;\n  height: 3rem;\n  width: 37rem;\n  margin-top: 0;\n  display: flex;\n  align-items: center;\n  font-size: 2rem;\n}\n\n#task-modal-button {\n  background-color: black;\n  height: 3rem;\n  width: 3rem;\n  background-color: red;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 2rem;\n}\n\n#task-modal-button:hover {\n  cursor: pointer;\n}\n\n#task-modal-bottom {\n  background-color: #e6e3e3;\n  height: 22rem;\n  width: 40rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  /* border: solid 3px black; */\n}\n\n#task-fieldset {\n  /* border: solid 3px black; */\n  height: 18rem;\n  width: 35rem;\n}\n\n#content {\n  width: 100rem;\n  display: flex;\n  flex-direction: column;\n}\n\n.task {\n  display: flex;\n  flex-direction: row;\n  border-radius: 15px;\n  height: 5vh;\n  width: 75vw;\n  background-color: #e6e3e3;\n  margin: 10px;\n}\n\n.task-item {\n  display: flex;\n}\n\n.task-name {\n  width: 40vw;\n  align-items: center;\n  font-size: 24px;\n  position: relative;\n  left: 100px;\n}\n\n.task-details {\n  width: 10vw;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  left: 100px;\n}\n\n.details {\n  cursor: pointer;\n}\n\n.task-date {\n  width: 9vw;\n  justify-content: center;\n  align-items: center;\n  position: relative;\n  left: 100px;\n}\n\n#delete {\n  position: relative;\n  left: 150px;\n  cursor: pointer;\n}\n\n.new-task-btn {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 2rem;\n  width: 6rem;\n  background-color: hotpink;\n  border-radius: 15px;\n  cursor: pointer;\n}\n\n#new-task-btn:hover {\n  cursor: pointer;\n}\n\n#empty-project {\n  font-size: 24px;\n}\n\n.details-container {\n  position: fixed;\n  left: 450px;\n  top: 300px;\n  height: 15rem;\n  width: 50rem;\n  background-color: #e6e3e3;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 1;\n  border-radius: 10px;\n  box-shadow: 5px 5px #aba8a8;\n}\n\n.details-container > button {\n  position: relative;\n  bottom: 105px;\n  left: 700px;\n  background-color: #e6e3e3;\n  cursor: pointer;\n  border: none;\n  font-size: 24px;\n}\n\n.details-content {\n  height: 75%;\n  width: 80%;\n  background-color: #e6e3e3;\n}\n\n#details-title {\n  height: 60px;\n  font-size: 30px;\n  line-height: 60px;\n}\n\n#details-description,\n#details-date,\n#details-priority {\n  height: 30px;\n  font-size: 20px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  height: 100vh;\n  width: 100vw;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n}\n\nh1 {\n  margin: 0;\n  padding: 10px;\n  background-color: #ef4444;\n}\n\n#middle {\n  flex-grow: 1;\n  display: flex;\n}\n\n#sidebar {\n  background-color: #fecaca;\n}\n\nnav {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  flex-shrink: 0;\n  padding: 10px;\n}\n\nmain {\n  flex-grow: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.project {\n  padding: 15px;\n  cursor: pointer;\n  text-align: center;\n}\n\n#add-project-btn {\n  padding: 5px;\n  border-radius: 5px;\n  border: none;\n  cursor: pointer;\n  margin-top: 5px;\n}\n\n.task {\n  display: flex;\n  justify-content: space-around;\n  background-color: gainsboro;\n  border-radius: 5px;\n  width: 70vw;\n  margin: 10px;\n}\n\n.task-left {\n  width: 40vw;\n  padding: 10px;\n}\n\n.task-name {\n  font-size: 24px;\n}\n\n.task-right {\n  display: flex;\n  width: 60vw;\n  justify-content: space-around;\n  align-items: center;\n  padding: 10px;\n}\n\n.details {\n  background-color: #fecaca;\n  border: none;\n  border-radius: 5px;\n  padding: 5px;\n  cursor: pointer;\n}\n\n#delete {\n  cursor: pointer;\n}\n\n.new-task-btn {\n  cursor: pointer;\n  margin: 10px;\n}\n\n#proj-modal-cnt {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border: 1px solid black;\n  border-radius: 10px;\n  z-index: 9999;\n  max-width: 80vw;\n  display: flex;\n  flex-direction: column;\n  height: 30%;\n  width: 50%;\n}\n\n#proj-modal-top {\n  display: flex;\n  background-color: #ef4444;\n  border-radius: 10px 10px 0 0;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 24px;\n}\n\n#proj-modal-top > #exit-button {\n  height: 100%;\n  background-color: #ef4444;\n  border: none;\n  font-size: 24px;\n  cursor: pointer;\n}\n\n#proj-form-container {\n  flex-grow: 1;\n  border-radius: 0 0 10px 10px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #fecaca;\n}\n\n#proj-form-container > form {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#proj-form-container > form > fieldset {\n  height: 80%;\n  width: 80%;\n  display: flex;\n  flex-direction: column;\n  font-size: 24px;\n  gap: 5px;\n  justify-content: center;\n  border: none;\n}\n\n#proj-form-container > form > fieldset > input {\n  height: 30px;\n  font-size: 20px;\n}\n\n#task-modal-container {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border: 1px solid black;\n  border-radius: 10px;\n  z-index: 9999;\n  max-width: 80vw;\n  display: flex;\n  flex-direction: column;\n  height: 40%;\n  width: 50%;\n}\n\n#task-modal-top {\n  display: flex;\n  background-color: #ef4444;\n  border-radius: 10px 10px 0 0;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 24px;\n  padding: 10px;\n}\n\n#task-modal-top > #task-modal-button {\n  cursor: pointer;\n}\n\n#task-modal-bottom {\n  background-color: #fecaca;\n  flex-grow: 1;\n}\n\n#task-modal-bottom > form {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#task-modal-bottom > form > fieldset {\n  height: 80%;\n  width: 80%;\n  display: flex;\n  flex-direction: column;\n  border: none;\n  font-size: 20px;\n}\n\n#task-modal-bottom > form > fieldset > input,\nselect {\n  height: 30px;\n  font-size: 20px;\n}\n", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,YAAY;EACZ,SAAS;EACT,UAAU;EACV,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,SAAS;EACT,aAAa;EACb,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,cAAc;EACd,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,gBAAgB;EAChB,SAAS;EACT,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,kBAAkB;EAClB,YAAY;EACZ,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,2BAA2B;EAC3B,kBAAkB;EAClB,WAAW;EACX,YAAY;AACd;;AAEA;EACE,WAAW;EACX,aAAa;AACf;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,WAAW;EACX,6BAA6B;EAC7B,mBAAmB;EACnB,aAAa;AACf;;AAEA;EACE,yBAAyB;EACzB,YAAY;EACZ,kBAAkB;EAClB,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,eAAe;EACf,YAAY;AACd;;AAEA;EACE,eAAe;EACf,QAAQ;EACR,SAAS;EACT,gCAAgC;EAChC,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;EACb,eAAe;EACf,aAAa;EACb,sBAAsB;EACtB,WAAW;EACX,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,4BAA4B;EAC5B,mBAAmB;EACnB,8BAA8B;EAC9B,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,yBAAyB;EACzB,YAAY;EACZ,eAAe;EACf,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,4BAA4B;EAC5B,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,yBAAyB;AAC3B;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,UAAU;EACV,aAAa;EACb,sBAAsB;EACtB,eAAe;EACf,QAAQ;EACR,uBAAuB;EACvB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,eAAe;AACjB;;AAEA;EACE,eAAe;EACf,QAAQ;EACR,SAAS;EACT,gCAAgC;EAChC,uBAAuB;EACvB,mBAAmB;EACnB,aAAa;EACb,eAAe;EACf,aAAa;EACb,sBAAsB;EACtB,WAAW;EACX,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,4BAA4B;EAC5B,mBAAmB;EACnB,8BAA8B;EAC9B,eAAe;EACf,aAAa;AACf;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,yBAAyB;EACzB,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,UAAU;EACV,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,eAAe;AACjB;;AAEA;;EAEE,YAAY;EACZ,eAAe;AACjB","sourcesContent":["body {\n  height: 100vh;\n  width: 100vw;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n}\n\nh1 {\n  margin: 0;\n  padding: 10px;\n  background-color: #ef4444;\n}\n\n#middle {\n  flex-grow: 1;\n  display: flex;\n}\n\n#sidebar {\n  background-color: #fecaca;\n}\n\nnav {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  flex-shrink: 0;\n  padding: 10px;\n}\n\nmain {\n  flex-grow: 1;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n.project {\n  padding: 15px;\n  cursor: pointer;\n  text-align: center;\n}\n\n#add-project-btn {\n  padding: 5px;\n  border-radius: 5px;\n  border: none;\n  cursor: pointer;\n  margin-top: 5px;\n}\n\n.task {\n  display: flex;\n  justify-content: space-around;\n  background-color: gainsboro;\n  border-radius: 5px;\n  width: 70vw;\n  margin: 10px;\n}\n\n.task-left {\n  width: 40vw;\n  padding: 10px;\n}\n\n.task-name {\n  font-size: 24px;\n}\n\n.task-right {\n  display: flex;\n  width: 60vw;\n  justify-content: space-around;\n  align-items: center;\n  padding: 10px;\n}\n\n.details {\n  background-color: #fecaca;\n  border: none;\n  border-radius: 5px;\n  padding: 5px;\n  cursor: pointer;\n}\n\n#delete {\n  cursor: pointer;\n}\n\n.new-task-btn {\n  cursor: pointer;\n  margin: 10px;\n}\n\n#proj-modal-cnt {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border: 1px solid black;\n  border-radius: 10px;\n  z-index: 9999;\n  max-width: 80vw;\n  display: flex;\n  flex-direction: column;\n  height: 30%;\n  width: 50%;\n}\n\n#proj-modal-top {\n  display: flex;\n  background-color: #ef4444;\n  border-radius: 10px 10px 0 0;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 24px;\n}\n\n#proj-modal-top > #exit-button {\n  height: 100%;\n  background-color: #ef4444;\n  border: none;\n  font-size: 24px;\n  cursor: pointer;\n}\n\n#proj-form-container {\n  flex-grow: 1;\n  border-radius: 0 0 10px 10px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  background-color: #fecaca;\n}\n\n#proj-form-container > form {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#proj-form-container > form > fieldset {\n  height: 80%;\n  width: 80%;\n  display: flex;\n  flex-direction: column;\n  font-size: 24px;\n  gap: 5px;\n  justify-content: center;\n  border: none;\n}\n\n#proj-form-container > form > fieldset > input {\n  height: 30px;\n  font-size: 20px;\n}\n\n#task-modal-container {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  border: 1px solid black;\n  border-radius: 10px;\n  z-index: 9999;\n  max-width: 80vw;\n  display: flex;\n  flex-direction: column;\n  height: 40%;\n  width: 50%;\n}\n\n#task-modal-top {\n  display: flex;\n  background-color: #ef4444;\n  border-radius: 10px 10px 0 0;\n  align-items: center;\n  justify-content: space-between;\n  font-size: 24px;\n  padding: 10px;\n}\n\n#task-modal-top > #task-modal-button {\n  cursor: pointer;\n}\n\n#task-modal-bottom {\n  background-color: #fecaca;\n  flex-grow: 1;\n}\n\n#task-modal-bottom > form {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#task-modal-bottom > form > fieldset {\n  height: 80%;\n  width: 80%;\n  display: flex;\n  flex-direction: column;\n  border: none;\n  font-size: 20px;\n}\n\n#task-modal-bottom > form > fieldset > input,\nselect {\n  height: 30px;\n  font-size: 20px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3961,7 +3961,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "body": () => (/* binding */ body),
 /* harmony export */   "closeBtn": () => (/* binding */ closeBtn),
-/* harmony export */   "content": () => (/* binding */ content),
 /* harmony export */   "descriptionInput": () => (/* binding */ descriptionInput),
 /* harmony export */   "dueDateInput": () => (/* binding */ dueDateInput),
 /* harmony export */   "header": () => (/* binding */ header),
@@ -3972,47 +3971,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "projModal": () => (/* binding */ projModal),
 /* harmony export */   "projUL": () => (/* binding */ projUL),
 /* harmony export */   "projectInput": () => (/* binding */ projectInput),
+/* harmony export */   "sidebar": () => (/* binding */ sidebar),
 /* harmony export */   "subTaskBtn": () => (/* binding */ subTaskBtn),
 /* harmony export */   "taskModalBtn": () => (/* binding */ taskModalBtn),
 /* harmony export */   "taskModalCnt": () => (/* binding */ taskModalCnt),
+/* harmony export */   "tasks": () => (/* binding */ tasks),
 /* harmony export */   "titleInput": () => (/* binding */ titleInput)
 /* harmony export */ });
 // basic skeleton
 const body = document.getElementById('body');
 const header = document.createElement('header');
 const h1 = document.createElement('h1');
+const middle = document.createElement('div');
+const sidebar = document.createElement('div');
 const main = document.createElement('main');
 const nav = document.createElement('nav');
-const content = document.createElement('div');
+const tasks = document.createElement('div');
 
 h1.textContent = 'Todo List';
 
-content.id = 'content';
+tasks.id = 'tasks-container';
+middle.id = 'middle';
+sidebar.id = 'sidebar';
 
 body.appendChild(header);
 header.appendChild(h1);
-body.appendChild(main);
-main.appendChild(nav);
-main.appendChild(content);
+body.appendChild(middle);
+middle.appendChild(sidebar);
+sidebar.appendChild(nav);
+middle.appendChild(main);
+main.appendChild(tasks);
 
 // sidebar content
-const navTop = document.createElement('div');
-const navBottom = document.createElement('div');
 const projectsContainer = document.createElement('div');
 const projUL = document.createElement('ul');
 const newProjBtn = document.createElement('button');
 
-navTop.id = 'nav-top';
-navBottom.id = 'nav-bottom';
 projectsContainer.id = 'projects-container';
 newProjBtn.id = 'add-project-btn';
 
 newProjBtn.textContent = '+ Add Project';
 
-nav.append(navTop, navBottom);
-navBottom.appendChild(projectsContainer);
+nav.appendChild(projectsContainer);
 projectsContainer.appendChild(projUL);
-navBottom.appendChild(newProjBtn);
+nav.appendChild(newProjBtn);
 
 // create project modal
 const projModal = document.createElement('div');
@@ -4121,6 +4123,7 @@ const dueDateInput = document.createElement('input');
 dueDateLabel.setAttribute('for', 'duedate');
 dueDateInput.setAttribute('type', 'date');
 dueDateInput.setAttribute('name', 'duedate');
+dueDateInput.id = 'due-date';
 dueDateLabel.textContent = 'Due Date:';
 
 taskFieldset.appendChild(dueDateLabel);
@@ -4273,23 +4276,30 @@ function getCurrentProj() {
 
 function renderTasks() {
   if (_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.length > 0) {
-    _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.innerHTML = '';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.tasks.innerHTML = '';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.appendChild(_UI__WEBPACK_IMPORTED_MODULE_2__.tasks);
     for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.length; i++) {
       const task = document.createElement('div');
+      const taskLeft = document.createElement('div');
+      const taskRight = document.createElement('div');
       const taskName = document.createElement('div');
-      const taskDetails = document.createElement('div');
+      // const taskDetails = document.createElement('div');
       const detailsButton = document.createElement('button');
       const taskDate = document.createElement('div');
       trash = document.createElement('img');
-      _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(task);
-      task.appendChild(taskName);
-      task.appendChild(taskDetails);
-      taskDetails.appendChild(detailsButton);
-      task.appendChild(taskDate);
-      task.appendChild(trash);
+      _UI__WEBPACK_IMPORTED_MODULE_2__.tasks.appendChild(task);
+      task.appendChild(taskLeft);
+      task.appendChild(taskRight);
+      taskLeft.appendChild(taskName);
+      taskRight.appendChild(detailsButton);
+      taskRight.appendChild(taskDate);
+      taskRight.appendChild(trash);
       task.className = 'task';
+      taskLeft.className = 'task-left';
+      taskRight.className = 'task-right';
       taskName.classList.add('task-item', 'task-name');
-      taskDetails.classList.add('task-item', 'task-details');
+      // taskDetails.classList.add('task-item', 'task-details');
       detailsButton.id = project.id;
       detailsButton.className = 'details';
       taskDate.classList.add('task-item', 'task-date');
@@ -4340,25 +4350,24 @@ function renderTasks() {
       deleteTask();
     }
     const newTask = document.createElement('btn');
-    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
+    _UI__WEBPACK_IMPORTED_MODULE_2__.tasks.appendChild(newTask);
     newTask.id = project.id;
     newTask.className = 'new-task-btn';
     newTask.textContent = '+ New Task';
     newTask.addEventListener('click', displayTaskModal);
   } else {
-    _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
-    _UI__WEBPACK_IMPORTED_MODULE_2__.content.innerHTML = '';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.innerHTML = '';
     const emptyProjCnt = document.createElement('div');
     const emptyProjP = document.createElement('p');
     emptyProjP.textContent = 'This project is empty.';
 
     emptyProjP.id = 'empty-project';
 
-    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(emptyProjCnt);
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.appendChild(emptyProjCnt);
     emptyProjCnt.appendChild(emptyProjP);
 
     const newTask = document.createElement('btn');
-    _UI__WEBPACK_IMPORTED_MODULE_2__.content.appendChild(newTask);
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.appendChild(newTask);
     newTask.className = 'new-task-btn';
     newTask.id = project.id;
     newTask.textContent = '+ New Task';
@@ -4370,12 +4379,18 @@ function renderTasks() {
 function displayProjModal() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.newProjBtn.addEventListener('click', () => {
     _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'flex';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'blur(4px)';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'blur(4px)';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.sidebar.style.filter = 'blur(4px)';
   });
 }
 displayProjModal();
 
 function displayTaskModal() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalCnt.style.display = 'flex';
+  _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'blur(4px)';
+  _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'blur(4px)';
+  _UI__WEBPACK_IMPORTED_MODULE_2__.sidebar.style.filter = 'blur(4px)';
 }
 
 function addProj() {
@@ -4384,6 +4399,9 @@ function addProj() {
     (0,_projects__WEBPACK_IMPORTED_MODULE_0__.addProject)();
     _UI__WEBPACK_IMPORTED_MODULE_2__.projectInput.value = '';
     _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.sidebar.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'none';
     renderProjects();
   });
 }
@@ -4398,6 +4416,9 @@ function addNewTask() {
     _UI__WEBPACK_IMPORTED_MODULE_2__.dueDateInput.value = '';
     _UI__WEBPACK_IMPORTED_MODULE_2__.priorityInput.value = '';
     _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalCnt.style.display = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.sidebar.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'none';
     renderTasks();
   });
 }
@@ -4406,6 +4427,9 @@ addNewTask();
 function closeProjModal() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.closeBtn.addEventListener('click', () => {
     _UI__WEBPACK_IMPORTED_MODULE_2__.projModal.style.display = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.sidebar.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'none';
   });
 }
 closeProjModal();
@@ -4413,6 +4437,9 @@ closeProjModal();
 function closeTaskModal() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalBtn.addEventListener('click', () => {
     _UI__WEBPACK_IMPORTED_MODULE_2__.taskModalCnt.style.display = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.sidebar.style.filter = 'none';
+    _UI__WEBPACK_IMPORTED_MODULE_2__.header.style.filter = 'none';
   });
 }
 closeTaskModal();

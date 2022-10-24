@@ -4250,6 +4250,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let project;
 let trash;
+let deleteProjBtn;
 
 function renderProjects() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
@@ -4359,21 +4360,39 @@ function renderTasks() {
     _UI__WEBPACK_IMPORTED_MODULE_2__.main.innerHTML = '';
     const emptyProjCnt = document.createElement('div');
     const emptyProjP = document.createElement('p');
-    emptyProjP.textContent = 'This project is empty.';
-
+    // eslint-disable-next-line operator-linebreak
+    emptyProjP.textContent =
+      'This project is empty. You can delete it or add a new task.';
     emptyProjP.id = 'empty-project';
 
     _UI__WEBPACK_IMPORTED_MODULE_2__.main.appendChild(emptyProjCnt);
     emptyProjCnt.appendChild(emptyProjP);
 
-    const newTask = document.createElement('btn');
+    const newTask = document.createElement('button');
     _UI__WEBPACK_IMPORTED_MODULE_2__.main.appendChild(newTask);
     newTask.className = 'new-task-btn';
     newTask.id = project.id;
     newTask.textContent = '+ New Task';
     // eslint-disable-next-line no-use-before-define
     newTask.addEventListener('click', displayTaskModal);
+
+    deleteProjBtn = document.createElement('button');
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.appendChild(deleteProjBtn);
+    deleteProjBtn.textContent = 'Delete Project';
+    deleteProjBtn.className = 'delete-button';
+    deleteProjBtn.id = project.id;
+    deleteProject();
   }
+}
+
+function deleteProject() {
+  deleteProjBtn.addEventListener('click', () => {
+    // const projClass = e.target.className;
+    _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.splice(currentIndex, 1);
+    console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
+    renderProjects();
+    _UI__WEBPACK_IMPORTED_MODULE_2__.main.innerHTML = '';
+  });
 }
 
 function displayProjModal() {
@@ -4500,6 +4519,11 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
+
+  /*   const newProjSave = JSON.stringify(newProject);
+  localStorage.setItem('newProjSave', newProjSave);
+  console.log(localStorage); */
+  console.log(projectsList);
 }
 
 

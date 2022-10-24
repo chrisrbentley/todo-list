@@ -31,6 +31,7 @@ import {
 
 let project;
 let trash;
+let deleteProjBtn;
 
 function renderProjects() {
   projUL.innerHTML = '';
@@ -140,21 +141,39 @@ function renderTasks() {
     main.innerHTML = '';
     const emptyProjCnt = document.createElement('div');
     const emptyProjP = document.createElement('p');
-    emptyProjP.textContent = 'This project is empty.';
-
+    // eslint-disable-next-line operator-linebreak
+    emptyProjP.textContent =
+      'This project is empty. You can delete it or add a new task.';
     emptyProjP.id = 'empty-project';
 
     main.appendChild(emptyProjCnt);
     emptyProjCnt.appendChild(emptyProjP);
 
-    const newTask = document.createElement('btn');
+    const newTask = document.createElement('button');
     main.appendChild(newTask);
     newTask.className = 'new-task-btn';
     newTask.id = project.id;
     newTask.textContent = '+ New Task';
     // eslint-disable-next-line no-use-before-define
     newTask.addEventListener('click', displayTaskModal);
+
+    deleteProjBtn = document.createElement('button');
+    main.appendChild(deleteProjBtn);
+    deleteProjBtn.textContent = 'Delete Project';
+    deleteProjBtn.className = 'delete-button';
+    deleteProjBtn.id = project.id;
+    deleteProject();
   }
+}
+
+function deleteProject() {
+  deleteProjBtn.addEventListener('click', () => {
+    // const projClass = e.target.className;
+    projectsList.splice(currentIndex, 1);
+    console.log(projectsList);
+    renderProjects();
+    main.innerHTML = '';
+  });
 }
 
 function displayProjModal() {

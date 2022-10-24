@@ -22,6 +22,11 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
+
+  /*   const newProjSave = JSON.stringify(newProject);
+  localStorage.setItem('newProjSave', newProjSave);
+  console.log(localStorage); */
+  console.log(projectsList);
 }
 
 export { projectsList, addProject };

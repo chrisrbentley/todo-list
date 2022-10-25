@@ -33,8 +33,20 @@ let project;
 let trash;
 let deleteProjBtn;
 
+window.addEventListener('load', () => {
+  if (localStorage.length > 0) {
+    const storedArr = JSON.parse(localStorage.getItem('projectsList'));
+    console.log(storedArr);
+    for (let i = 0; i < storedArr.length; i++) {
+      projectsList.push(storedArr[i]);
+    }
+  }
+  renderProjects();
+});
+
 function renderProjects() {
   projUL.innerHTML = '';
+  console.log(projectsList);
   for (let i = 0; i < projectsList.length; i++) {
     project = document.createElement('li');
     project.className = 'project';
@@ -44,7 +56,6 @@ function renderProjects() {
     getCurrentProj();
   }
 }
-renderProjects();
 
 let currentProj;
 let currentIndex;
@@ -173,6 +184,7 @@ function deleteProject() {
     console.log(projectsList);
     renderProjects();
     main.innerHTML = '';
+    localStorage.setItem('projectsList', JSON.stringify(projectsList));
   });
 }
 
@@ -255,6 +267,7 @@ function deleteTask() {
     // if above breaks try ==
     projectsList[currentIndex].todos.splice(index, 1);
     renderTasks();
+    localStorage.setItem('projectsList', JSON.stringify(projectsList));
   });
 }
 

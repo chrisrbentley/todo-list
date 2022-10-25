@@ -31,6 +31,8 @@ function addTask() {
   // eslint-disable-next-line eqeqeq
   const index = projectsList.findIndex((object) => object.id == currentProj);
   projectsList[index].todos.push(newTodo);
+  localStorage.setItem('projectsList', JSON.stringify(projectsList));
+  console.log(localStorage);
   console.log(projectsList);
 }
 

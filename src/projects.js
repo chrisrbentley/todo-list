@@ -12,9 +12,9 @@ class Project {
   }
 }
 
-const reminders = new Project('Reminders', [], Date.now());
+/* const reminders = new Project('Reminders', [], Date.now());
 projectsList.push(reminders);
-reminders.todos.push(defaultTodo);
+reminders.todos.push(defaultTodo); */
 
 function addProject() {
   const title = projectInput.value;
@@ -22,10 +22,8 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
-
-  /*   const newProjSave = JSON.stringify(newProject);
-  localStorage.setItem('newProjSave', newProjSave);
-  console.log(localStorage); */
+  localStorage.setItem('projectsList', JSON.stringify(projectsList));
+  console.log(localStorage);
   console.log(projectsList);
 }
 

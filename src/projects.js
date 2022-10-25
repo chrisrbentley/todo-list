@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-import { defaultTodo } from './todo';
+// import { defaultTodo } from './todo';
 import { projectInput } from './UI';
 
 const projectsList = [];

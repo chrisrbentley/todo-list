@@ -4213,6 +4213,8 @@ function addTask() {
   // eslint-disable-next-line eqeqeq
   const index = _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList.findIndex((object) => object.id == _domController__WEBPACK_IMPORTED_MODULE_2__.currentProj);
   _projects__WEBPACK_IMPORTED_MODULE_3__.projectsList[index].todos.push(newTodo);
+  localStorage.setItem('projectsList', JSON.stringify(_projects__WEBPACK_IMPORTED_MODULE_3__.projectsList));
+  console.log(localStorage);
   console.log(_projects__WEBPACK_IMPORTED_MODULE_3__.projectsList);
 }
 
@@ -4252,8 +4254,20 @@ let project;
 let trash;
 let deleteProjBtn;
 
+window.addEventListener('load', () => {
+  if (localStorage.length > 0) {
+    const storedArr = JSON.parse(localStorage.getItem('projectsList'));
+    console.log(storedArr);
+    for (let i = 0; i < storedArr.length; i++) {
+      _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.push(storedArr[i]);
+    }
+  }
+  renderProjects();
+});
+
 function renderProjects() {
   _UI__WEBPACK_IMPORTED_MODULE_2__.projUL.innerHTML = '';
+  console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
   for (let i = 0; i < _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList.length; i++) {
     project = document.createElement('li');
     project.className = 'project';
@@ -4263,7 +4277,6 @@ function renderProjects() {
     getCurrentProj();
   }
 }
-renderProjects();
 
 let currentProj;
 let currentIndex;
@@ -4392,6 +4405,7 @@ function deleteProject() {
     console.log(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList);
     renderProjects();
     _UI__WEBPACK_IMPORTED_MODULE_2__.main.innerHTML = '';
+    localStorage.setItem('projectsList', JSON.stringify(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList));
   });
 }
 
@@ -4474,6 +4488,7 @@ function deleteTask() {
     // if above breaks try ==
     _projects__WEBPACK_IMPORTED_MODULE_0__.projectsList[currentIndex].todos.splice(index, 1);
     renderTasks();
+    localStorage.setItem('projectsList', JSON.stringify(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsList));
   });
 }
 
@@ -4509,9 +4524,9 @@ class Project {
   }
 }
 
-const reminders = new Project('Reminders', [], Date.now());
+/* const reminders = new Project('Reminders', [], Date.now());
 projectsList.push(reminders);
-reminders.todos.push(_todo__WEBPACK_IMPORTED_MODULE_0__.defaultTodo);
+reminders.todos.push(defaultTodo); */
 
 function addProject() {
   const title = _UI__WEBPACK_IMPORTED_MODULE_1__.projectInput.value;
@@ -4519,10 +4534,8 @@ function addProject() {
   const id = Date.now();
   const newProject = new Project(title, todos, id);
   projectsList.push(newProject);
-
-  /*   const newProjSave = JSON.stringify(newProject);
-  localStorage.setItem('newProjSave', newProjSave);
-  console.log(localStorage); */
+  localStorage.setItem('projectsList', JSON.stringify(projectsList));
+  console.log(localStorage);
   console.log(projectsList);
 }
 

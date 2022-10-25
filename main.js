@@ -4508,10 +4508,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "addProject": () => (/* binding */ addProject),
 /* harmony export */   "projectsList": () => (/* binding */ projectsList)
 /* harmony export */ });
-/* harmony import */ var _todo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todo */ "./src/todo.js");
-/* harmony import */ var _UI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UI */ "./src/UI.js");
+/* harmony import */ var _UI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UI */ "./src/UI.js");
 /* eslint-disable import/no-cycle */
-
+// import { defaultTodo } from './todo';
 
 
 const projectsList = [];
@@ -4529,7 +4528,7 @@ projectsList.push(reminders);
 reminders.todos.push(defaultTodo); */
 
 function addProject() {
-  const title = _UI__WEBPACK_IMPORTED_MODULE_1__.projectInput.value;
+  const title = _UI__WEBPACK_IMPORTED_MODULE_0__.projectInput.value;
   const todos = [];
   const id = Date.now();
   const newProject = new Project(title, todos, id);
@@ -4553,7 +4552,6 @@ function addProject() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Todo": () => (/* binding */ Todo),
-/* harmony export */   "defaultTodo": () => (/* binding */ defaultTodo),
 /* harmony export */   "formattedDate": () => (/* binding */ formattedDate)
 /* harmony export */ });
 /* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/format/index.js");
@@ -4571,14 +4569,14 @@ class Todo {
 }
 const date = new Date();
 const formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_0__["default"])(date, 'P');
-const defaultTodo = new Todo(
+/* const defaultTodo = new Todo(
   'Get a haircut',
   'Get a haircut before my job interview',
   formattedDate,
   'high',
   false,
   Date.now(),
-);
+); */
 
 
 

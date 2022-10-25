@@ -8,11 +8,16 @@ const main = document.createElement('main');
 const nav = document.createElement('nav');
 const tasks = document.createElement('div');
 
+const menu = document.createElement('div');
+const menuBar1 = document.createElement('div');
+const menuBar2 = document.createElement('div');
+const menuBar3 = document.createElement('div');
+
 h1.textContent = 'Todo List';
 
 tasks.id = 'tasks-container';
 middle.id = 'middle';
-sidebar.id = 'sidebar';
+// sidebar.className = 'sidebar1';
 
 body.appendChild(header);
 header.appendChild(h1);
@@ -21,6 +26,16 @@ middle.appendChild(sidebar);
 sidebar.appendChild(nav);
 middle.appendChild(main);
 main.appendChild(tasks);
+
+header.appendChild(menu);
+menu.appendChild(menuBar1);
+menu.appendChild(menuBar2);
+menu.appendChild(menuBar3);
+
+menu.id = 'menu';
+menuBar1.className = 'bar1';
+menuBar2.className = 'bar2';
+menuBar3.className = 'bar3';
 
 // sidebar content
 const projectsContainer = document.createElement('div');
@@ -203,4 +218,8 @@ export {
   dueDateInput,
   priorityInput,
   sidebar,
+  menu,
+  menuBar1,
+  menuBar2,
+  menuBar3,
 };

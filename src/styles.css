@@ -12,13 +12,48 @@ body {
   color: #353535;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: #3c6e71;
+  align-items: center;
+}
+
 h1 {
   margin: 0;
   padding: 30px;
-  background-color: #3c6e71;
   font-family: 'Fuzzy Bubbles', cursive;
   font-size: 44px;
   color: #d9d9d9;
+}
+
+#menu {
+  margin: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #353535;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 #middle {
@@ -26,7 +61,7 @@ h1 {
   display: flex;
 }
 
-#sidebar {
+.sidebar1 {
   background-color: #d9d9d9;
   width: 250px;
   min-width: 130px;
@@ -121,7 +156,7 @@ ul {
 .new-task-btn {
   cursor: pointer;
   margin: 10px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   border: none;
   background-color: #d9d9d9;
@@ -309,6 +344,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+  word-wrap: wrap;
 }
 
 .delete-button {
@@ -323,4 +359,48 @@ select {
   background-color: #3c6e71;
   color: #d9d9d9;
   transition: 0.3s;
+}
+
+@media (max-width: 640px) {
+  .task {
+    font-size: 0.8rem;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar1 {
+    display: flex;
+    background-color: #d9d9d9;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+
+  .closed {
+    display: none;
+  }
+
+  #task-modal-container {
+    height: 70%;
+    width: 60%;
+  }
+
+  #proj-modal-cnt {
+    height: 60%;
+    width: 60%;
+  }
 }

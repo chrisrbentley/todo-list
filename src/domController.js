@@ -27,6 +27,7 @@ import {
   dueDateInput,
   priorityInput,
   sidebar,
+  menu,
 } from './UI';
 
 let project;
@@ -275,5 +276,30 @@ function deleteTask() {
     localStorage.setItem('projectsList', JSON.stringify(projectsList));
   });
 }
+
+function toggleChange() {
+  menu.addEventListener('click', () => {
+    menu.classList.toggle('change');
+    // sidebar.classList.toggle('open');
+    // sidebar.style.display = 'flex';
+  });
+}
+toggleChange();
+
+const y = window.matchMedia('(max-width: 640px)');
+y.addEventListener('change', ({ matches }) => toggleSBID(matches));
+console.log(y);
+function toggleSBID() {
+  if (y.matches) {
+    sidebar.className = 'closed';
+    menu.addEventListener('click', () => {
+      sidebar.classList.toggle('closed');
+      sidebar.classList.toggle('sidebar1');
+    });
+  } else {
+    sidebar.className = 'sidebar1';
+  }
+}
+toggleSBID();
 
 export { trash, currentProj };

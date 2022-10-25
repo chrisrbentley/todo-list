@@ -104,6 +104,7 @@ function renderTasks() {
       taskDate.textContent = projectsList[currentIndex].todos[i].dueDate;
       detailsButton.addEventListener('click', () => {
         const detailsContainer = document.createElement('div');
+        const detailsTop = document.createElement('div');
         const closeDetails = document.createElement('button');
         const detailsContent = document.createElement('div');
         const detailsTitle = document.createElement('div');
@@ -113,6 +114,7 @@ function renderTasks() {
 
         detailsContainer.className = 'details-container';
         detailsContent.className = 'details-content';
+        detailsTop.className = 'details-top';
         detailsTitle.id = 'details-title';
         detailsDescription.id = 'details-description';
         detailsDate.id = 'details-date';
@@ -125,19 +127,22 @@ function renderTasks() {
         detailsPriority.textContent = `Priority: ${projectsList[currentIndex].todos[i].priority}`;
 
         body.appendChild(detailsContainer);
-        detailsContainer.appendChild(closeDetails);
+        detailsContainer.appendChild(detailsTop);
         detailsContainer.appendChild(detailsContent);
-        detailsContent.appendChild(detailsTitle);
+        detailsTop.appendChild(detailsTitle);
+        detailsTop.appendChild(closeDetails);
         detailsContent.appendChild(detailsDescription);
         detailsContent.appendChild(detailsDate);
         detailsContent.appendChild(detailsPriority);
         main.style.filter = 'blur(4px)';
         header.style.filter = 'blur(4px)';
+        sidebar.style.filter = 'blur(4px)';
 
         closeDetails.addEventListener('click', () => {
           detailsContainer.remove();
           main.style.filter = 'none';
           header.style.filter = 'none';
+          sidebar.style.filter = 'none';
         });
       });
       deleteTask();

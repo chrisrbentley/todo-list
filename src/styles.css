@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
   height: 100vh;
   width: 100vw;
@@ -5,12 +8,17 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  color: #353535;
 }
 
 h1 {
   margin: 0;
-  padding: 10px;
-  background-color: #ef4444;
+  padding: 30px;
+  background-color: #3c6e71;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 44px;
+  color: #d9d9d9;
 }
 
 #middle {
@@ -19,7 +27,9 @@ h1 {
 }
 
 #sidebar {
-  background-color: #fecaca;
+  background-color: #d9d9d9;
+  width: 250px;
+  min-width: 130px;
 }
 
 nav {
@@ -35,6 +45,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 }
 
 ul {
@@ -44,17 +55,30 @@ ul {
 }
 
 .project {
-  padding: 15px;
+  padding: 10px 15px;
   cursor: pointer;
   text-align: center;
+  border-radius: 5px;
+}
+
+.project:hover {
+  background-color: #c4c4c4;
+  transition: 0.3s;
 }
 
 #add-project-btn {
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   margin-top: 5px;
+  background-color: #d9d9d9;
+}
+
+#add-project-btn:hover {
+  transition: 0.4s;
+  background-color: #3c6e71;
+  color: #d9d9d9;
 }
 
 .task {
@@ -67,12 +91,10 @@ ul {
 }
 
 .task-left {
+  display: flex;
   width: 40vw;
   padding: 10px;
-}
-
-.task-name {
-  font-size: 24px;
+  align-items: center;
 }
 
 .task-right {
@@ -84,10 +106,11 @@ ul {
 }
 
 .details {
-  background-color: #fecaca;
+  background-color: #3c6e71;
+  color: #d9d9d9;
   border: none;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -98,6 +121,17 @@ ul {
 .new-task-btn {
   cursor: pointer;
   margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+.new-task-btn:hover {
+  transition: 0.4s;
+  background-color: #3c6e71;
+  color: #d9d9d9;
+  padding: 10px;
 }
 
 #proj-modal-cnt {
@@ -111,25 +145,30 @@ ul {
   max-width: 80vw;
   display: flex;
   flex-direction: column;
-  height: 30%;
+  height: 40%;
   width: 50%;
 }
 
 #proj-modal-top {
   display: flex;
-  background-color: #ef4444;
+  background-color: #3c6e71;
   border-radius: 10px 10px 0 0;
   align-items: center;
   justify-content: space-between;
   font-size: 24px;
 }
 
+#proj-modal-top > h3 {
+  color: #d9d9d9;
+}
+
 #proj-modal-top > #exit-button {
   height: 100%;
-  background-color: #ef4444;
+  background-color: #3c6e71;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: #d9d9d9;
 }
 
 #proj-form-container {
@@ -138,7 +177,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fecaca;
+  background-color: #d9d9d9;
 }
 
 #proj-form-container > form {
@@ -176,18 +215,19 @@ ul {
   max-width: 80vw;
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 55%;
   width: 50%;
 }
 
 #task-modal-top {
   display: flex;
-  background-color: #ef4444;
+  background-color: #3c6e71;
   border-radius: 10px 10px 0 0;
   align-items: center;
   justify-content: space-between;
   font-size: 24px;
   padding: 10px;
+  color: #d9d9d9;
 }
 
 #task-modal-top > #task-modal-button {
@@ -195,7 +235,7 @@ ul {
 }
 
 #task-modal-bottom {
-  background-color: #fecaca;
+  background-color: #d9d9d9;
   flex-grow: 1;
 }
 
@@ -220,4 +260,67 @@ ul {
 select {
   height: 30px;
   font-size: 20px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 9999;
+  color: #d9d9d9;
+  height: 50%;
+  width: 50%;
+  background-color: #3c6e71;
+}
+
+.details-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: #353535;
+  font-size: 30px;
+}
+
+.details-top > button {
+  background-color: #3c6e71;
+  border: none;
+  font-size: 30px;
+  color: #353535;
+  cursor: pointer;
+}
+
+.details-top > button:hover {
+  background-color: #356264;
+  transform: 0.3s;
+  border-radius: 5px;
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.delete-button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+.delete-button:hover {
+  background-color: #3c6e71;
+  color: #d9d9d9;
+  transition: 0.3s;
 }
